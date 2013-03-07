@@ -1,0 +1,590 @@
+﻿.profile {
+	border-width: 2px 0px 0px; border-style: solid none none; border-color: rgb(215, 215, 215) currentColor currentColor; width: 100%; border-collapse: separate;
+}
+.profile th {
+	background: rgb(235, 236, 225); width: 180px; border-top-color: rgb(255, 255, 255); border-right-color: rgb(200, 200, 200); border-bottom-color: rgb(200, 200, 200); border-top-width: 1px; border-right-width: 3px; border-bottom-width: 1px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid;
+}
+.profile td {
+	background: rgb(246, 246, 246); border-top-color: rgb(255, 255, 255); border-bottom-color: rgb(215, 215, 215); border-left-color: rgb(255, 255, 255); border-top-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-top-style: solid; border-bottom-style: solid; border-left-style: solid;
+}
+.profile th
+{
+	padding: 3px 10px 3px 10px;
+	vertical-align: top;
+}
+.profile td
+{
+	padding: 3px 10px 3px 10px;
+	vertical-align: top;
+}
+
+
+.divleft
+{
+	
+	width: 33%; 
+	float: left;  
+	text-align:left;
+}
+ .divcenter
+{
+	
+	width: 33%; 
+	float: left;  
+	text-align:center;
+}
+ .divright
+{
+	
+	width: 33%; 
+	float: right;  
+	text-align:right;
+}
+ .divclearboth
+{
+	
+
+	clear: both;
+}
+
+.thumbnailFeaturedProducts
+{
+	border: thin solid #C0C0C0;
+	padding: 15px 38px 15px 15px;
+	float: left;
+	width: 110px;
+	height: 90px;
+	margin: 5px;
+}
+
+.companyContactUs
+{
+	
+}
+.companyContactUs .td1
+{
+	
+	width: 200px;
+}
+.companyContactUs .TextBoxWidth
+{
+	width: 300px;
+	
+}
+.companyContactUs .TextAreaWidth
+{
+	width: 400px;
+	
+	height: 200px;
+}
+
+
+
+/* ProductDisplay */
+.productinquiry
+{
+	border-width: 0px;
+	border-style: none;
+	border-color: rgb(215, 215, 215) currentColor currentColor;
+	width: 100%;
+	border-collapse: separate;
+}
+.productinquiry th {
+	background: rgb(235, 236, 225); width: 180px; border-top-color: rgb(255, 255, 255); border-right-color: rgb(200, 200, 200); border-bottom-color: rgb(200, 200, 200); border-top-width: 1px; border-right-width: 3px; border-bottom-width: 1px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid;
+}
+.productinquiry td {
+	background: rgb(246, 246, 246); border-top-color: rgb(255, 255, 255); border-bottom-color: rgb(215, 215, 215); border-left-color: rgb(255, 255, 255); border-top-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-top-style: solid; border-bottom-style: solid; border-left-style: solid;
+}
+.productinquiry th {
+	padding: 6px 10px; vertical-align: top;
+}
+.productinquiry td
+{
+	padding: 3px 10px 3px 10px;
+	vertical-align: top;
+}
+.productinquiry h1
+{
+	padding: 0px;
+	margin: 0px;
+	font-size: large;
+	font-weight: bolder;
+}
+.productinquiry h2
+{
+	padding: 0px;
+	margin: 0px;
+	font-size: medium;
+	
+}
+.productinquiry h3
+{
+	padding: 0px;
+	margin: 0px;
+	font-size: medium;	
+	font-weight: bolder;
+}
+
+.similarproductinquiry
+{
+	border-width: 0px;
+	border-style: none;
+	border-color: rgb(215, 215, 215) currentColor currentColor;
+	width: 173px;
+	border-collapse: separate;
+}
+
+.similarproductinquiry td
+{
+	background: rgb(224, 224, 224);
+	border-top-color: rgb(255, 255, 255);
+	border-bottom-color: rgb(215, 215, 215);
+	border-left-color: rgb(255, 255, 255);
+	border-top-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	font-size: x-small;
+}
+
+
+.SendQuotation
+{
+	padding: 0px;
+	margin: 0px 35px 0px 35px;
+	border-width: 0px;
+	border-style: none;
+	border-color: rgb(215, 215, 215) currentColor currentColor;
+	width: 700px;
+	border-collapse: separate;
+}
+
+.SendQuotationtd
+{
+	border-color: #f3f3f3;
+	background: #f3f3f3;
+	border-top-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	font-size: 14px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	text-align: right;
+}
+.SendQuotationtdtd
+{
+	border-color: #f3f3f3;
+	background: #f3f3f3;
+	border-top-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	font-size: x-small;
+	text-align: left;
+	color: #C0C0C0;
+}
+
+
+.SendQuotationOption
+{
+	border-color: f3f3f3;
+	padding: 0px;
+	margin: 0px;
+	border-width: 0px;
+	border-style: none;
+	width: 700px;
+	border-collapse: separate;
+	}
+
+.SendQuotationOptiontd
+{
+	border-color: #f3f3f3;
+	background: #f3f3f3;
+	border-top-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	width: 12%;
+	font-family: 'Adobe Arabic';
+	font-size: medium;
+}
+.SendQuotationOptiontdtd
+{
+	border-color: #f3f3f3;
+	background: #f3f3f3;
+	border-top-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	width: 20%;
+	font-family: 'Times New Roman' , Times, serif;
+	font-size: 10px;
+	color: #000000;
+}
+
+
+.PrdDipStyleViewSectionT1
+{
+	border-color: #f3f3f3;
+	padding: 0px;
+	margin: 0px;
+	border-width: 0px;
+	border-style: none;
+	width: 690px;
+	border-collapse: separate;
+	background-color: #f3f3f3;
+	font-family: sans-serif;
+	font-size: 10px;
+}
+.PrdDipStyleViewSectionT1 td
+{
+	
+	margin: 0px;
+	padding: 5px 0px 0px 0px;
+	background: #f3f3f3;
+	width: 50px;
+	font-family: sans-serif;
+	font-size: 10px;
+	height: 20px;
+}
+.PrdDipStyleViewSectionT1 td + td
+{
+	padding: 0px;
+	margin: 0px;
+	border-style: none solid none none;
+	border-width: 0px 2px 0px 0px;
+	border-color: #f3f3f3 #A0A0A0 #f3f3f3 #000000;
+	background: #f3f3f3;
+	width: 70px;
+	font-family: sans-serif;
+	font-size: 10px;
+}
+.PrdDipStyleViewSectionT1 td + td + td
+{
+	padding: 5px 0px 0px 5px;
+	margin: 0px;
+	border-style: none;
+	border-width: 0px 1px 0px 1px;
+	border-color: #f3f3f3 #FF0000 #f3f3f3 #000000;
+	background: #f3f3f3;
+	width: 50px;
+	font-family: sans-serif;
+	font-size: 10px;
+}
+.PrdDipStyleViewSectionT1 td + td + td + td
+{
+	padding: 0px;
+	margin: 0px;
+	border-style: none solid none none;
+	border-width: 0px 2px 0px 1px;
+	border-color: #f3f3f3 #A0A0A0 #f3f3f3 #000000;
+	background: #f3f3f3;
+	width: 80px;
+	font-family: sans-serif;
+	font-size: 10px;
+	
+}
+
+.PrdDipStyleViewSectionT1 td + td + td + td + td
+{
+	padding: 5px 0px 0px 0px;
+	margin: 0px;
+	border-style: none;
+	border-width: 0px 1px 0px 1px;
+	border-color: #f3f3f3 #FF0000 #f3f3f3 #000000;
+	background: #f3f3f3;
+	width: 140px;
+	font-family: sans-serif;
+	font-size: 10px;
+	text-align: right;
+}
+
+
+ .bulletStypeDisplay li a
+{
+	font: 11px Arial, Helvetica, sans-serif;
+	display: block;
+	line-height: 25px;
+	background-repeat: repeat-x;
+	color: #000080;
+	text-decoration: none;
+}
+ #bulletStypeDisplay a:link, #bulletStypeDisplay a:active
+{
+	
+	text-decoration: underline;
+}
+
+.bulletStypeDisplay a:hover
+{
+	
+	color: navy;
+	text-decoration: underline;
+}
+.bulletStypeDisplay
+{
+	width: 176px;
+	text-align:right;
+	margin: 0px auto;
+	padding: 5px 0px 2px 1px;
+	color: #9CAAC1;
+	list-style-type: none;
+	clear: both;
+	display: inline;
+}
+.bulletStypeDisplay li
+{
+	width: 170px;
+	float: left;
+	border-right: none;
+	text-align: left;
+	
+	
+} 
+
+/*------------------------------------*/
+
+ .vbulletStypeDisplay li a
+{
+	font: 11px Arial, Helvetica, sans-serif;
+	display: block;
+	line-height: 25px;
+	background-repeat: repeat-x;
+	color: #000080;
+	text-decoration: none;
+}
+ #vbulletStypeDisplay a:link, #vbulletStypeDisplay a:active
+{
+	
+	text-decoration: underline;
+}
+
+.vbulletStypeDisplay a:hover
+{
+	color: #0000FF;
+	text-decoration: none;
+	background-color: #FFFFFF;
+}
+.vbulletStypeDisplay
+{
+	width: 150px;
+	text-align: right;
+	margin: 0px auto;
+	padding: 5px 0px 2px 1px;
+	color: #9CAAC1;
+	list-style-type: none;
+	clear: both;
+	display: inline;
+	
+}
+.vbulletStypeDisplay li
+{
+	width: 163px;
+	float: left;
+	border-right: none;
+	text-align: left;
+	background-color: #f3f3f3;
+	margin-left: 0px;
+	padding-left: 0px;
+	margin-bottom: 1px;
+} 
+
+/*------------------------------------*/
+
+#TblPrdGalMainDiv
+{
+	border: 1px solid #f3f3f3;
+	padding: 0px;
+	margin: 0px;
+	width: 173px;
+	border-collapse: separate;
+	
+	height: 230px;
+	
+}
+#TblPrdGalMainDiv a
+{
+	color: #000080;
+	text-decoration:none;
+}
+#TblPrdGalMainDiv a:hover
+{
+	color: #000080;
+	text-decoration:underline;
+}
+
+#TblPrdGalMainDiv #imagetd
+{
+	border: 0px solid #f3f3f3;
+	padding-right: 23px;
+	padding-left: 23px;
+	display: block;
+}
+
+
+.TblPrdInlineMainDiv
+{
+	border-color: #f3f3f3;
+	padding: 0px;
+	margin: 0px;
+	border-width: 0px;
+	border-style: solid solid none none;
+	width: 675px;
+	border-collapse: separate;
+}
+
+
+.contactdisplay
+{
+	font-family: 'Estrangelo Edessa';
+	font-size: 12px;
+}
+
+
+
+
+
+
+.MakeCompInq {
+	border-width: 2px 0px 0px; border-style: solid none none; border-color: rgb(215, 215, 215) currentColor currentColor; width: 100%; border-collapse: separate;
+}
+.MakeCompInq th {
+	background: rgb(235, 236, 225); width: 180px; border-top-color: rgb(255, 255, 255); border-right-color: rgb(200, 200, 200); border-bottom-color: rgb(200, 200, 200); border-top-width: 1px; border-right-width: 3px; border-bottom-width: 1px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid;
+}
+.MakeCompInq td {
+	background: rgb(246, 246, 246); border-top-color: rgb(255, 255, 255); border-bottom-color: rgb(215, 215, 215); border-left-color: rgb(255, 255, 255); border-top-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-top-style: solid; border-bottom-style: solid; border-left-style: solid;
+}
+.MakeCompInq th
+{
+	padding: 2px 5px 2px 0px;
+	vertical-align: top;
+	text-align: right;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	width: 260px;
+}
+.MakeCompInq td
+{
+	padding: 2px 5px 2px 5px;
+	vertical-align: top;
+}
+
+.companyprofilemaindivd #TblPrdHotSaleMainDiv
+{
+	border-color: #f3f3f3;
+	padding: 0px;
+	margin: 0px;
+	border-width: 1px;
+	border-style: none;
+	width: 233px;
+	border-collapse: separate;
+	
+}
+.companyprofilemaindivd #TblPrdHotSaleMainDiv a
+{
+	color: #000080;
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+.companyprofilemaindivd #TblPrdHotSaleMainDiv a:hover
+{
+	color: #000080;
+	text-decoration:underline;
+}
+
+.companyprofilemaindivd #TblPrdHotSaleMainDiv img
+{
+	border: 1px solid #f3f3f3;
+	display: block;
+	padding-right: 0px;
+	padding-left: 0px;
+	
+	
+}
+
+
+.companyprofilemaindivd #TblPrdFeaturedProducts
+{
+	border-color: #f3f3f3;
+	padding: 0px;
+	margin: 0px;
+	border-width: 1px;
+	border-style: none;
+	width: 173px;
+	border-collapse: separate;
+	
+}
+.companyprofilemaindivd #TblPrdFeaturedProducts a
+{
+	color: #000080;
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+.companyprofilemaindivd #TblPrdFeaturedProducts a:hover
+{
+	color: #000080;
+	text-decoration:underline;
+}
+
+.companyprofilemaindivd #TblPrdFeaturedProducts img
+{
+	border: 1px solid #f3f3f3;
+	display: block;
+	padding-right: 0px;
+	padding-left: 0px;
+}
+
+.LatestProductsContentCss #TblPrdHotSaleMainDiv
+{
+	border-color: #f3f3f3;
+	padding: 0px;
+	margin: 0px;
+	border-width: 1px;
+	border-style: none;
+	width: 220px;
+	border-collapse: separate;
+	
+}
+
+
+
+.LatestProductsContentCss #TblPrdHotSaleMainDiv #BottomTdC
+{
+	background-image: url('../frontimages/background/TitleHeadW1818H.jpg');
+	background-repeat: repeat-x;
+}
+.LatestProductsContentCss #TblPrdHotSaleMainDiv a
+{
+	color: #FFFFFF;
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+.LatestProductsContentCss #TblPrdHotSaleMainDiv a:hover
+{
+	color: #FFFFFF;
+	text-decoration: underline;
+}
+
+.LatestProductsContentCss #TblPrdHotSaleMainDiv img
+{
+	border: 1px solid #f3f3f3;
+	display: block;
+	padding-right: 0px;
+	padding-left: 0px;
+	
+}
+

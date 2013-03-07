@@ -1,0 +1,59 @@
+<%@ Page Language="C#" MasterPageFile="~/admin/MasterPage.master" AutoEventWireup="true" CodeFile="TechnicalSpecsEdit.aspx.cs" Inherits="admin_TechnicalSpecsEdit" Title="" Theme="Admin" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="CPAdminHead" Runat="Server">
+ <link href="../App_Themes/Admin/StyleSheet.css" rel="stylesheet" type="text/css">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="CPAdminBody" Runat="Server">
+<h1>
+        Edit Technical Specs <asp:Label ID="lblProductName" runat="server"></asp:Label></h1>
+    <p>
+       
+        <asp:Label ID="lblMsg" runat="server" ForeColor="red"></asp:Label>&nbsp;</p>
+    <br />
+    <table>
+        <tr>
+            <td style="width: 182px; height: 16px">
+                Type:</td>
+            <td style="width: 100px; height: 16px">
+             <asp:TextBox ID="txtType" runat="server" Width="300px"></asp:TextBox>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 182px">
+                Overall Length:</td>
+            <td style="width: 100px">
+             <asp:TextBox ID="txtOverallLength" runat="server" Width="300px"></asp:TextBox>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 182px">
+                Overall Width:</td>
+            <td style="width: 100px">
+             <asp:TextBox ID="txtOverallWidth" runat="server" Width="300px"></asp:TextBox>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 182px">
+                Overall Height:</td>
+            <td style="width: 100px">
+             <asp:TextBox ID="txtOverallHeight" runat="server" Width="300px"></asp:TextBox>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 182px">
+              </td>
+            <td style="width: 100px">
+                <asp:Label ID="lblSpecId" runat="server" Visible="false"></asp:Label>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" style="height: 27px">
+                <asp:Button ID="btnUpdate" runat="server" Text="Update" OnClick="btnUpdate_Click" /></td>
+        </tr>
+        
+    </table>
+</asp:Content>
+

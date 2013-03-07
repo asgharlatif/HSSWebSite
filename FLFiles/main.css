@@ -1,0 +1,242 @@
+
+
+/*
+body {
+	margin: 0px; padding: 0px; border: 0px currentColor; text-align: center; color: rgb(122, 122, 122); font-family: tahoma, arial, serif; font-size: 12px;
+}
+*/
+
+#page {
+	margin: auto; width: 950px; text-align: left;
+}
+#top {
+	width: 950px; height: 66px; text-align: right; margin-top: 20px;
+}
+#top #logo {
+	width: 240px; margin-left: 10px; float: left; display: block;
+}
+#top #topmenu {
+	width: 620px; text-align: right; color: white; font-family: Tahoma, Geneva, sans-serif; margin-top: 10px; float: right; display: block;
+}
+#top #topmenu a {
+	color: white; text-decoration: none; text-shadow: #2e6d87 1px 1px 0px;
+}
+#top #topmenu a:hover {
+	color: rgb(133, 218, 231); text-decoration: underline;
+}
+#top #livechat {
+	border: 0px solid white; width: 80px; height: 80px; margin-top: -15px; float: right; display: block;
+}
+#menu {
+	background: url("http://www.myvisuallistings.com/resources-website-v5/images/menu-background.jpg") no-repeat white; width: 950px; height: 36px; text-align: right;
+}
+#top-menu {
+	background: url("http://www.myvisuallistings.com/resources-website-v5/images/menu/menu-bg.jpg") no-repeat white; width: 950px; height: 36px; text-align: right;
+}
+#content {
+	background: url("http://www.myvisuallistings.com/resources-website-v5/images/content-background.gif") repeat-x top rgb(247, 247, 247); border-width: 0px 1px 1px; border-style: none solid solid; border-color: currentColor rgb(222, 226, 228) rgb(222, 226, 228); padding: 10px; width: 928px; font-size: 13px; float: left; display: block;
+}
+#content #center {
+	padding: 10px; border: 1px solid rgb(222, 226, 228); width: 581px; margin-right: 10px; float: left; display: block; min-height: 185px; background-color: white;
+}
+#content #fullcenter {
+	padding: 10px; border: 1px solid rgb(222, 226, 228); width: 905px; margin-right: 10px; float: left; display: block; min-height: 185px; background-color: white;
+}
+#content #side {
+	background: url("http://www.myvisuallistings.com/resources-website-v5/images/testimonial.png") no-repeat left top; padding: 40px 10px 10px; width: 295px; height: 156px; text-align: justify; color: white; font-family: Verdana; font-size: 10px; float: left; display: block; text-shadow: 1px 1px 0px #488834;
+}
+#content #side span {
+	color: rgb(36, 79, 23); text-shadow: 1px 1px 2px #a9e994;
+}
+#footer {
+	width: 950px; text-align: right; line-height: 26px;
+}
+#footer #copyright {
+	font-size: 11px;
+}
+#footer a {
+	color: rgb(122, 122, 122);
+}
+#footer a:hover {
+	color: rgb(14, 121, 168); text-decoration: none;
+}
+#headerSmall {
+	height: 180px;
+}
+h1 {
+	color: rgb(236, 134, 25); line-height: 20px; font-family: "Vollkorn", arial, serif; font-size: 24px; font-weight: normal; margin-bottom: 2px;
+}
+h2 {
+	color: rgb(79, 164, 53); line-height: 20px; font-family: "Vollkorn", arial, serif; font-size: 20px; font-weight: normal; margin-bottom: 2px;
+}
+h3 {
+	margin: 2px; line-height: 20px; font-family: "Vollkorn", arial, serif; font-size: 15px; font-weight: normal;
+}
+.imageBox {
+	width: 260px; float: left; display: block;
+}
+.contentBox {
+	width: 321px; float: left; display: block;
+}
+.centerBox {
+	width: 581px; text-align: center; float: left; display: block;
+}
+.clear {
+	width: 100%; float: left; display: block;
+}
+.whiteBox {
+	border: 1px solid rgb(222, 226, 228); width: 313px; margin-bottom: 10px; float: left; display: block; background-color: white;
+}
+.whiteBoxSmall {
+	padding: 5px; border: 1px solid rgb(222, 226, 228); width: 140px; text-align: center; margin-bottom: 10px; float: left; display: block; background-color: white;
+}
+.whiteBox p {
+	margin: 0px; padding: 10px;
+}
+.whiteBox p a {
+	margin-bottom: 5px; float: right;
+}
+.win {
+	margin-bottom: 10px;
+}
+.testimonials {
+	background: url("http://www.myvisuallistings.com/resources-website-v5/images/bg-testimonials.jpg") no-repeat; width: 315px; height: 166px; padding-top: 40px; margin-bottom: 10px; float: left; display: block;
+}
+.testimonials dl {
+	padding-left: 20px;
+}
+.testimonials dd {
+	color: rgb(169, 233, 148); text-shadow: #488834 1px 1px 0px;
+}
+.testimonials dt {
+	color: white; text-shadow: #488834 1px 1px 0px;
+}
+.testimonials a {
+	margin-top: -5px; margin-right: 5px; float: right;
+}
+.new {
+	background: url("http://www.myvisuallistings.com/resources-website-v5/images/new-included-free.gif") no-repeat; width: 119px; height: 71px; margin-top: -10px; margin-left: 472px; position: absolute; cursor: pointer;
+}
+#full-box {
+	width: 902px; margin-top: 10px; float: left;
+}
+#full-separator {
+	background: url("http://www.myvisuallistings.com/resources-website-v5/images/self-serve-virtual-tours/full-separator.gif") no-repeat center; width: 902px; height: 26px; margin-top: 20px; float: left;
+}
+#marketing-tools {
+	margin: auto auto 30px; padding: 15px 10px 15px 5px; border: 1px solid rgb(235, 235, 235); width: 891px; color: rgb(0, 0, 0); font-family: tahoma; font-size: 11px; font-weight: bold; float: left;
+}
+#column1 {
+	width: 312px; float: left;
+}
+#column2 {
+	width: 318px; float: left;
+}
+#column3 {
+	width: 256px; float: left;
+}
+.icondiv {
+	width: 30px; padding-left: 5px; float: left;
+}
+.labeldiv {
+	padding-top: 7px; padding-left: 3px; float: left;
+}
+#clear {
+	clear: both;
+}
+.column1item {
+	margin: 2px; padding: 8px 3px; height: 30px; cursor: pointer;
+}
+.column1item:hover {
+	background-color: rgb(217, 237, 204);
+}
+.click-preview {
+	color: rgb(48, 153, 16); display: none;
+}
+.hr {
+	background: url("http://www.myvisuallistings.com/resources-website-v5/images/common/full-hr.gif") no-repeat center; margin: auto; width: 691px; height: 22px;
+}
+ul#new-menu {
+	list-style: none; margin: 0px 0px 0px 28px; padding: 0px; clear: both;
+}
+#new-menu li {
+	text-indent: -9999999px; overflow: hidden; float: left; display: inline;
+}
+#new-menu li a {
+	width: 100%; height: 100%; display: block;
+}
+#new-menu li a span {
+	display: none;
+}
+#new-menu li.full-service {
+	width: 216px; height: 36px;
+}
+#new-menu li.full-service a {
+	background-image: url("http://www.myvisuallistings.com/resources-website-v5/images/menu/full-service.gif"); background-repeat: no-repeat;
+}
+#new-menu li.full-service a:hover {
+	background-position: 0px -36px;
+}
+#new-menu li.full-service a.selected {
+	background-position: 0px -36px;
+}
+#new-menu li.self-serve {
+	width: 159px; height: 36px;
+}
+#new-menu li.self-serve a {
+	background-image: url("http://www.myvisuallistings.com/resources-website-v5/images/menu/self-serve.gif"); background-repeat: no-repeat;
+}
+#new-menu li.self-serve a:hover {
+	background-position: 0px -36px;
+}
+#new-menu li.self-serve a.selected {
+	background-position: 0px -36px;
+}
+#new-menu li.brochures {
+	width: 171px; height: 36px;
+}
+#new-menu li.brochures a {
+	background-image: url("http://www.myvisuallistings.com/resources-website-v5/images/menu/print-email-brochures.gif"); background-repeat: no-repeat;
+}
+#new-menu li.brochures a:hover {
+	background-position: 0pc -36px;
+}
+#new-menu li.brochures a.selected {
+	background-position: 0px -36px;
+}
+#new-menu li.marketing-tools {
+	width: 163px; height: 36px;
+}
+#new-menu li.marketing-tools a {
+	background-image: url("http://www.myvisuallistings.com/resources-website-v5/images/menu/marketing-tools.gif"); background-repeat: no-repeat;
+}
+#new-menu li.marketing-tools a:hover {
+	background-position: 0px -36px;
+}
+#new-menu li.marketing-tools a.selected {
+	background-position: 0px -36px;
+}
+#new-menu li.provider {
+	width: 213px; height: 36px;
+}
+#new-menu li.provider a {
+	background-image: url("http://www.myvisuallistings.com/resources-website-v5/images/menu/find-provider.gif"); background-repeat: no-repeat;
+}
+#new-menu li.order {
+	width: 213px; height: 36px;
+}
+#new-menu li.order a {
+	background-image: url("http://www.myvisuallistings.com/resources-website-v5/images/menu/order-virtual-tour.gif"); background-repeat: no-repeat;
+}
+.suggestionsBox {
+	margin: -2px 0px 0px 3px; padding: 5px; width: 198px; color: rgb(255, 255, 255); position: absolute; opacity: 0.85; background-color: rgb(33, 36, 39);
+}
+.suggestionList {
+	margin: 0px; padding: 0px;
+}
+.suggestionList li {
+	list-style: inside; margin: 0px 0px 3px; padding: 3px; cursor: pointer;
+}
+.suggestionList li:hover {
+	background-color: rgb(101, 156, 216);
+}

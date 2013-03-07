@@ -1,0 +1,47 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Test.aspx.cs" Inherits="Test" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head id="Head1" runat="server">
+    <link href="Styles/TableFormatting.css" rel="stylesheet" type="text/css" />
+    <title>UpdatePanel Tutorial</title>
+    <style type="text/css">
+    #UpdatePanel1 { 
+      width:300px;
+     }
+        </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <table cellpadding="0" cellspacing="0">
+                            
+                            <tr>
+                                <td align="left" height="50" valign="top" width="10">
+                                    <asp:CheckBox ID="CheckBox1" runat="server" />
+                                    
+                                </td>
+                                <td align="left" valign="middle" width="150">
+                                    <a href='#'>
+                                    <img alt="" src='<%# Eval("ThumbNail") %>'  />
+                                    </a>
+                                </td>
+                                <td align="left" bgcolor="#f3f3f3" width="350">
+                                        <h1 >
+                                            <%# Eval("ItemName")%></h1>
+
+                                            <h2 class="texbluebold">
+                                            &nbsp;<%# Eval("ItemShortDesc") %></h2>
+                                    
+                                </td>
+                            </tr>
+                            
+                        </table>
+    
+    </form>
+
+    </body>
+</html>

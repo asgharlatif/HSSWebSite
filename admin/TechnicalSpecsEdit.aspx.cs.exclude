@@ -1,0 +1,105 @@
+using System;
+using System.Data;
+using System.Configuration;
+using System.Collections;
+using System.Web;
+using System.Web.Security;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using System.Web.UI.WebControls.WebParts;
+using System.Web.UI.HtmlControls;
+
+public partial class admin_TechnicalSpecsEdit : System.Web.UI.Page
+{
+    dsTechnicalSpecsTableAdapters.TechnicalSpecsTableAdapter taTechnicalSpecs = new dsTechnicalSpecsTableAdapters.TechnicalSpecsTableAdapter();
+    dsTechnicalSpecs.TechnicalSpecsDataTable dtTechnicalSpecs;
+
+    dsProductTableAdapters.ProductTableAdapter taProduct = new dsProductTableAdapters.ProductTableAdapter();
+    dsProduct.ProductDataTable dtProduct;
+
+    protected void Page_Load(object sender, EventArgs e)
+    {
+        if (IsPostBack)
+            return;
+
+        if (Request.QueryString["ID"] != null)
+        {
+            if (Request.QueryString["ID"] == "True")
+            {
+                lblMsg.Visible = true;
+                lblMsg.Text = "Successfully Edited";
+            }
+        }
+
+        if (Request.QueryString["ProductId"] != null)
+        {
+            int ProductId = Convert.ToInt32(Request.QueryString["ProductId"]);
+            dtProduct = taProduct.SelectProductNamebyProductId(ProductId);
+            if (dtProduct.Rows.Count > 0)
+            {
+                lblProductName.Text = "for " + dtProduct[0].ProductTitle.ToString();
+                dtTechnicalSpecs = taTechnicalSpecs.SelectSpecsbyProductId(ProductId);
+                if (dtTechnicalSpecs.Rows.Count > 0)
+                {
+                    txtType.Text = dtTechnicalSpecs[0].Type.ToString();
+                    txtCompressionRatio.Text = dtTechnicalSpecs[0].CompressionRatio.ToString();
+                    txtMaxTorque.Text = dtTechnicalSpecs[0].MaxTorque.ToString();
+                    txtLubricationSystem.Text = dtTechnicalSpecs[0].LubricationSystem.ToString();
+                    txtIgnitionSystem.Text = dtTechnicalSpecs[0].IgnitionSystem.ToString();
+                    txtFuelTankCapacity.Text = dtTechnicalSpecs[0].FuelTankCapacity.ToString();
+                    txtFuelReserveCapacity.Text = dtTechnicalSpecs[0].FuelReserveCapacity.ToString();
+                    txtStartingSystem.Text = dtTechnicalSpecs[0].StartingSystem.ToString();
+                    txtOverallLength.Text = dtTechnicalSpecs[0].OverallLength.ToString();
+                    txtOverallWidth.Text = dtTechnicalSpecs[0].OverallWidth.ToString();
+                    txtOverallHeight.Text = dtTechnicalSpecs[0].OverallHeight.ToString();
+                    txtWheelBase.Text = dtTechnicalSpecs[0].wheelBase.ToString();
+                    txtDryWeight.Text = dtTechnicalSpecs[0].DryWeight.ToString();
+                    txtTyreFront.Text = dtTechnicalSpecs[0].TyreFront.ToString();
+                    txtTyreRear.Text = dtTechnicalSpecs[0].TyreRear.ToString();
+                    lblSpecId.Text = dtTechnicalSpecs[0].SpecId.ToString();
+                }
+                else
+                {
+                    btnUpdate.Visible = false;
+                    lblMsg.Text = "Product Specs not found";
+                }
+            }
+            else
+            {
+                btnUpdate.Visible = false;
+                lblMsg.Text = "Product Specs not found";
+            }
+           
+        }
+        else
+        {
+            btnUpdate.Visible = false;
+            lblMsg.Text = "Product Specs not found";
+        }
+
+    }
+    protected void btnUpdate_Click(object sender, EventArgs e)
+    {
+        int ProductId = Convert.ToInt32(Request.QueryString["ProductId"]);
+        //taTechnicalSpecs.EditSpecs(Convert.ToInt32(lblSpecId.Text),
+        //                           ProductId,
+        //                           txtType.Text.Trim(),
+        //                           txtCompressionRatio.Text.Trim(),
+        //                           txtMaxTorque.Text.Trim(),
+        //                           txtLubricationSystem.Text.Trim(),
+        //                           txtIgnitionSystem.Text.Trim(),
+        //                           txtFuelTankCapacity.Text.Trim(),
+        //                           txtFuelReserveCapacity.Text.Trim(),
+        //                           txtStartingSystem.Text.Trim(),
+        //                           txtOverallLength.Text.Trim(),
+        //                           txtOverallWidth.Text.Trim(),
+        //                           txtOverallHeight.Text.Trim(),
+        //                           txtWheelBase.Text.Trim(),
+        //                           txtDryWeight.Text.Trim(),
+        //                           txtTyreFront.Text.Trim(),
+        //                           txtTyreRear.Text.Trim());
+
+        Response.Redirect("TechnicalSpecsEdit.aspx?ProductId=" + ProductId + "&ID=True");
+
+    }
+}

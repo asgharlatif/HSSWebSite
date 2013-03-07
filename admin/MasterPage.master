@@ -1,0 +1,265 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="Admin_MasterPage"%>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>HS&S Company | Admin</title>
+<meta name="robots" content="noindex, nofollow" />
+<link href="../App_Themes/Admin/StyleSheet.css" rel="stylesheet" type="text/css" />
+<asp:contentplaceholder id="CPAdminHead" runat="server"></asp:contentplaceholder> 
+    <script src="../Scripts/jquery-1.4.1.js" type="text/javascript"></script>
+    <!--src="http://code.jquery.com/jquery-latest.js"-->
+
+<script type="text/javascript"> 
+$(document).ready(function(){
+
+	$("ul.subnav").parent().append("<span></span>"); //Only shows drop down trigger when js is enabled - Adds empty span tag after ul.subnav
+	
+	$("ul.topnav li span").mouseover(function() { //When trigger is clicked...
+		
+		//Following events are applied to the subnav itself (moving subnav up and down)
+	    $(this).parent().find("ul.subnav").slideDown('fast').show(); //Drop down the subnav on click
+
+		$(this).parent().hover(function() {
+		}, function(){	
+			$(this).parent().find("ul.subnav").slideUp('fast'); //When the mouse hovers out of the subnav, move it back up
+		});
+
+		//Following events are applied to the trigger (Hover events for the trigger)
+		}).hover(function() { 
+			$(this).addClass("subhover"); //On hover over, add class "subhover"
+		}, function(){	//On Hover Out
+			$(this).removeClass("subhover"); //On hover out, remove class "subhover"
+	});
+
+});
+</script>
+
+<style type="text/css">
+ul.topnav {
+	list-style: none;
+	padding: 0 20px;	
+	margin: 0;
+	float: left;
+	width: 920px;
+	background: #222;
+	font-size: 11px;
+	background: url(images/ToolbarFooterbg.jpg) repeat-x;
+	FONT-FAMILY: Verdana, Geneva, Arial, Helvetica, sans-serif;
+}
+ul.topnav li {
+	float: left;
+	margin: 0;	
+	padding: 0 15px 0 0;
+	position: relative; /*--Declare X and Y axis base--*/
+}
+ul.topnav li a{
+	padding: 10px 5px;
+	color: #fff;
+	display: block;
+	text-decoration: none;
+	float: left;
+}
+ul.topnav li a:hover{
+	background: url(images/topnav_hover.gif) no-repeat center top;
+}
+ul.topnav li span { /*--Drop down trigger styles--*/
+	width: 17px;
+	height: 35px;
+	float: left;
+	background: url(images/subnav_btn.gif) no-repeat center top;
+}
+ul.topnav li span.subhover {background-position: center bottom; cursor: pointer;} /*--Hover effect for trigger--*/
+ul.topnav li ul.subnav {
+	list-style: none;
+	position: absolute; /*--Important - Keeps subnav from affecting main navigation flow--*/
+	left: 0; top: 35px;
+	background: #9CAAC1;
+	margin: 0; padding: 0;
+	display: none;
+	float: left;
+	width: 200px;
+	-moz-border-radius-bottomleft: 5px;
+	-moz-border-radius-bottomright: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+	-webkit-border-bottom-right-radius: 5px;
+	border: 1px solid #111;
+}
+ul.topnav li ul.subnav li{
+	margin: 0; padding: 0;
+	border-top: 1px solid #252525; /*--Create bevel effect--*/
+	border-bottom: 1px solid #444; /*--Create bevel effect--*/
+	clear: both;
+	width: 200px;
+}
+html ul.topnav li ul.subnav li a {
+	float: left;
+	width: 175px;
+	background:  url(images/dropdown_linkbg.gif) no-repeat 10px center;
+	padding-left: 20px;
+}
+html ul.topnav li ul.subnav li a:hover { /*--Hover effect for subnav links--*/
+	background: #E4DABC url(images/dropdown_linkbg.gif) no-repeat 10px center; 
+}
+</style>
+</head>
+<body>
+
+    <form id="form1" runat="server">
+<table width="100%" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+  <tr>
+    <td height="60" style="padding:10px;">
+        
+    <div style="float:left;"><a href="home.aspx"><img src="../frontimages/mainpageimages/SmallLogo.gif" id="IMG_logo" runat="server" border="0" /></a></div>
+    <div style="float:right;"><a href="Logout.aspx">Logout</a> | <a href="ChangePassword.aspx">Change Password</a></div>
+        &nbsp;
+    
+    </td>
+  </tr>
+  <tr>
+    <td align="left"  style="background-image: url(images/ToolbarFooterbg.jpg);">
+	
+	
+        
+ <ul class="topnav">
+
+	<li><a href="home.aspx">Home</a>
+        
+        <ul class="subnav">
+		    <li><a href="Companies.aspx">Manage Companies</a></li>
+            <li><a href="CompanyAdd.aspx">Add Company</a></li>
+
+            <li><a href="MainPageSection.aspx">Manage Main Page Sections</a></li>
+            <li><a href="PageSectionAdd.aspx">Add Page Section</a></li>
+
+            <li><a href="MainPageSectionDetail.aspx">Main Page Section Details</a></li>
+
+        </ul>
+
+	 </li>
+	
+    <li><a href="home.aspx">Base Modules</a>
+        
+        <ul class="subnav">
+		    <li><a href="Warranty.aspx">Manage Warranties</a></li>
+            <li><a href="WarrantyAdd.aspx">Add Warranty</a></li>
+
+            <li><a href="Brands.aspx">Manage Brand List</a></li>
+            <li><a href="BrandsAdd.aspx">Add Brand</a></li>
+
+           
+        </ul>
+
+	 </li>
+
+
+	<li><a href="#">Product Catalog</a>
+	 <ul class="subnav">
+		<li><a href="Categories.aspx">Manage Product Categories</a></li>
+		
+        <li><a href="CategoryAdd.aspx">Add Product Category</a></li>
+
+        <li><a href="SubCategories.aspx">Manage Product Sub Categories</a></li>		
+        <li><a href="SubCategoryAdd.aspx">Add Product Sub Category</a></li>
+
+
+        <li><a href="ProductGroups.aspx">Manage Product Group</a></li>		
+        <li><a href="ProductGroupAdd.aspx">Add Product Group</a></li>
+
+
+
+		<li><a href="Colors.aspx">Manage Product Colors</a></li>
+		<li><a href="ColorAdd.aspx">Add Product Color</a></li>
+		<li><a href="Products.aspx">Manage Products</a></li>
+		<li><a href="ProductAdd.aspx">Add Product</a></li>
+        
+        <li><a href="SimilarSetAdd.aspx">Add Product Similar Set</a></li>
+        <li> <a href="ProductSimilarSet.aspx">Manage Product Similar Set</a></li>
+
+        
+
+	</ul></li>
+     <li><a href="#">Subscribers</a>
+         <ul class="subnav">
+             <li><a href="NewsLetterGroups.aspx">Manage Newsletter Groups</a></li>
+             <li><a href="NewsLetterGroupAdd.aspx">Add Newsletter Group</a></li>
+             <li><a href="Subscribers.aspx">Manage Subscribers</a></li>
+             <li><a href="SubscriberAdd.aspx">Add Subscriber</a></li>
+         </ul>
+     </li>
+     <%--<li><a href="#">Customers</a>
+         <ul class="subnav">
+             <li><a href="Customers.aspx">Manage Customers</a></li>
+             <li><a href="CustomerAdd.aspx">Add Customer</a></li>
+         </ul>
+     </li>--%>
+     <li><a href="#">Downloads</a>
+         <ul class="subnav">
+             <li><a href="DownloadCategories.aspx">Manage Download Categories</a></li>
+             <li><a href="DownloadCategoryAdd.aspx">Add Download Category</a></li>
+             <li><a href="DownloadSubCategories.aspx">Manage Download Subcategories</a></li>
+             <li><a href="DownloadSubCategoryAdd.aspx">Add Download Subcategory</a></li>
+             <li><a href="Downloads.aspx">Manage Downloads</a></li>
+             <li><a href="DownloadAdd.aspx">Add Download</a></li>
+         </ul>
+     </li>
+     <li><a href="#">Feedback</a>
+         <ul class="subnav">
+             <li><a href="FeedBack.aspx">Manage Feedbacks</a></li>
+             <li><a href="FeedBackAdd.aspx">Add Feedback</a></li>
+         </ul>
+     </li>
+     <li><a href="#">News</a>
+         <ul class="subnav">
+             <li><a href="News.aspx">Manage News</a></li>
+             <li><a href="NewsAdd.aspx">Add News</a></li>
+         </ul>
+     </li>
+     <li><a href="#">FAQs</a>
+         <ul class="subnav">
+             <li><a href="SectionCategories.aspx">Manage Section Categories</a></li>
+             <li><a href="SectionCategoryAdd.aspx">Add Section Category</a></li>
+             <li><a href="Sections.aspx">Manage FAQ Sections</a></li>
+             <li><a href="SectionAdd.aspx">Add FAQ Section</a></li>
+             <li><a href="FAQs.aspx">Manage FAQs</a></li>
+             <li><a href="FAQsAdd.aspx">Add FAQ</a></li>
+         </ul>
+     </li>
+     <li><a href="#">Users</a>
+	 <ul class="subnav">
+	    <li><a href="UserAdd.aspx">Add User</a></li>
+		<li><a href="Users.aspx">Manage Users</a></li>
+	</ul></li>
+	<li><a href="#">Misc</a>
+	 <ul class="subnav">
+		<li><a href="ChangePassword.aspx">Change Password</a></li>
+		<li><a href="Logout.aspx">Logout</a></li>
+	</ul></li>
+	
+</ul>
+</td>
+  </tr>
+  <tr valign="top">
+    <td style="padding:10px; vertical-align:top;" valign="top" >
+    <div id="page">
+
+        <asp:contentplaceholder id="CPAdminBody" runat="server">
+            &nbsp;</asp:contentplaceholder> 
+        
+        </div>
+		</td>
+  </tr>
+  <tr valign="top">
+    <td style="padding:10px; vertical-align:top;" valign="top" >
+       <hr/>
+		</td>
+  </tr>
+
+
+  <tr>
+    <td bgcolor="#9CAAC1" class="footer" style="margin-top:10px;">&copy;<%= DateTime.Now.Year.ToString() %> MB Communication.</td>
+  </tr>
+</table>
+    </form>
+</body>
+</html>

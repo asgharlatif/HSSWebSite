@@ -1,0 +1,96 @@
+﻿div.copyrightContentCss
+{
+	border: 0px none #00FF00;
+	padding: 0px;
+	width: 940px;
+	float: left;
+	height: 27px;
+	margin-top: 10px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #FFFFFF;
+}
+div.copyrightContentCss a
+{
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+div.copyrightContentCss a:hover
+{
+	text-decoration: underline;
+	color: #FFFFFF;
+}
+
+div.copyrightContentCss a:visited
+{
+	text-decoration: underline;
+	color: #FFFFFF;
+}
+
+div.copyrightContentCss #idcopyrightContentCssL
+{
+	width: 5px;
+	float: left;
+	height: 27px;
+	background-image: url('../frontimages/background/leftstatusbar.gif');
+	background-repeat: no-repeat;
+}
+div.copyrightContentCss #idcopyrightContentCssR
+{
+	width: 5px;
+	float: left;
+	height: 27px;
+	background-image: url('../frontimages/background/rightstatusbar.gif');
+	background-repeat: no-repeat;
+}
+div.copyrightContentCss #idcopyrightContentCssC
+{
+	padding: 5px 0px 0px 0px;
+	width: 921px;
+	float: left;
+	height: 27px;
+	background-image: url('../frontimages/background/centerstatusbar.gif');
+	background-repeat: repeat-x;
+}
+
+div.copyrightContentCss #copyrightContentCssC_copyright
+{
+	border: 0px solid #FF0000;
+	width: 430px;
+	float: left;
+	height: 19px;
+	
+}
+div.copyrightContentCss #idFAQ , #idTermofUse,#idfeedback,#idPrivacy
+{
+	float: left;
+	height: 19px;
+}
+div.copyrightContentCss #idtop
+{
+	float: left;
+	height: 19px;
+	background-image: url('../frontimages/background/top.gif');
+	background-repeat: no-repeat;
+	padding-left: 20px;
+}
+
+div.copyrightContentCss #copyrightContentCssC_faq img
+{
+	
+}
+
+
+div.statusbarContentCss
+{
+	background-image: url('../frontimages/SmallPics/statusbar_1Pix.gif');
+	background-repeat: repeat-x;
+	width: 960px;
+	float: left;
+	height: 40px;
+	padding: 0px 0px 0px 0px;
+	margin: -15px;
+	position: fixed;
+	bottom: 0px;
+}

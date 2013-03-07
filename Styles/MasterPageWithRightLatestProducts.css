@@ -1,0 +1,48 @@
+﻿div.MasterPageWithRightLatestProductsLeftBarCss
+{
+	border: 0px none #800080;
+	margin: 4px 0px 0px 0px;
+	padding: 0px;
+	width: 250px;
+	background-repeat: no-repeat;
+	clear: none;
+	
+	clip: rect(0px, auto, auto, auto);
+	
+	float: right;
+} 
+
+div.MasterPageWithRightLatestProductsRigthBarCss
+{
+	border: 0px none #00FF00;
+	margin: 4px 0px 0px 0px;
+	padding: 0px;
+	width: 672px;
+	float: left;
+} 
+
+div.LatestProductsContentCss
+{
+	border: 1px solid #f3f3f3;
+	width: 250px;
+	height: 559px;
+	clear: none;
+	
+	overflow: auto;
+	-ms-overflow-x: hidden;
+	clip: rect(0px, auto, auto, auto);
+	
+}
+div.LatestProductsContentCss img
+{
+	
+}
+div.SubscriptionContentCss
+{
+	margin: 2px 0px 0px 0px;
+	border: 1px solid #f3f3f3;
+	padding: 2px 0px 0px 5px;
+	width: 247px;
+	height: 94px;
+	background-repeat: repeat-y;
+}

@@ -1,0 +1,87 @@
+﻿using System;
+using System.Data;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using System.Data.SqlClient;
+
+public partial class Test : System.Web.UI.Page
+{
+    connectionstring strConn = new connectionstring();
+    InventoryClass InvCls = new InventoryClass();
+    string SubCateCode = "", ItemKey = "";
+
+    int Count = 0, CurrentPage = 0;
+
+    protected void Page_Load(object sender, EventArgs e)
+    {
+        if (!Page.IsPostBack)
+        {
+            Session["CurrentPage"] = 0;
+        }
+        GetItems();
+    }
+    public void GetItems()
+    {
+        string key, name;
+        if (Convert.ToInt32(Session["CurrentPage"].ToString()) != 0)
+        {
+            CurrentPage = Convert.ToInt32(Session["CurrentPage"].ToString());
+        }
+        SqlConnection conn = new SqlConnection(strConn.connect());
+        conn.Open();
+        DataTable dtDB = new DataTable("ItemInfo");
+        DataTable dtDB1 = new DataTable("ItemInfo1");
+        if (1 == 1)
+        {
+            //key = Request.QueryString[0].ToString();
+            //if (key != "")
+            //{
+            //    SubCateCode = key;
+            //}
+            SqlDataAdapter adpDB = new SqlDataAdapter("Select top 12 * from bas_ItemMain", conn);
+            adpDB.Fill(dtDB);
+        }
+        else if (Request.QueryString.Count == 2)
+        {
+            key = Request.QueryString[0].ToString();
+            name = Request.QueryString[1].ToString();
+            if (key == "search" && name != "")
+            {
+                SqlDataAdapter adpDB = new SqlDataAdapter("Select  top 12 * from bas_ItemMain", conn);
+                adpDB.Fill(dtDB);
+            }
+        }
+
+        PagedDataSource objPage = new PagedDataSource();
+        objPage.DataSource = dtDB.DefaultView;
+        objPage.AllowPaging = true;
+        objPage.PageSize = InvCls.getTotalItemDisplyed("TotalNumberOfProductOnPrductPage");
+        Session["TotalPages"] = objPage.PageCount - 1;
+        objPage.CurrentPageIndex = CurrentPage;
+
+        if (objPage.PageCount > 1)
+        {
+            //lblCurrentPage.Text = "Page: " + (CurrentPage + 1).ToString() + " of " + objPage.PageCount.ToString();
+        }
+
+        // Disable Prev or Next buttons if necessary
+        //cmdPrev.Visible = !objPage.IsFirstPage;
+        //cmdNext.Visible = !objPage.IsLastPage;
+        //cmdFirst.Visible = !objPage.IsFirstPage;
+        //cmdLast.Visible = !objPage.IsLastPage;
+        DataList1.DataSource = objPage;
+        DataList1.DataBind();
+        conn.Close();
+        if (dtDB.Rows.Count == 0)
+        {
+            //Image1.Visible = true;
+        }
+    }
+    protected void DataList1_SelectedIndexChanged(object sender, EventArgs e)
+    {
+
+    }
+}

@@ -1,0 +1,103 @@
+﻿    <%@ Master Language="C#" MasterPageFile="~/Site.master" AutoEventWireup="true" CodeFile="MasterLeftRightCenterPages.master.cs" Inherits="MasterLeftRightCenterPages" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="MainContent" Runat="Server">
+
+    <div id="Master3SidedLeftBar">
+      
+   
+    <div id="gallery">
+     <!----------------------1--------------------->
+	<a href="companyIntroduction.aspx?qv=mb" >
+		<img src="centralscreenimages/smallview/mb1.jpg" alt="MB Communications" width="250" height="118" title="Networking Business"  
+        rel="<h3>MB Communication</h3>deals in all kind of networking items "/>
+	</a>	
+    <!----------------------2--------------------->
+	 <a href="companyIntroduction.aspx?qv=mb" >
+		<img src="centralscreenimages/smallview/mb2.jpg" alt="MB Communications" width="250" height="118" title="Networking Business"  
+        rel="<h3>MB Communications</h3>We are specialized in export of these networking products"/>
+	</a>
+
+     <!----------------------3--------------------->
+      <a href="companyIntroduction.aspx?qv=bc" >
+		<img src="centralscreenimages/smallview/blackcopper1.jpg" alt="Black Copper" width="250" height="118" title="Networking Business"  
+        rel="<h3>Black Copper</h3>We deales in routers and switches"/>
+	 </a>
+     <!----------------------4--------------------->
+     <a href="companyIntroduction.aspx?qv=bc" >
+		<img src="centralscreenimages/smallview/blackcopper2.jpg" alt="Black Copper" width="250" height="118" title="Networking Business"  
+        rel="<h3>Black Copper</h3>We provide technical support in configuring routers and switches"/>
+	 </a>
+
+      <!----------------------5-1 bikenbike--------------------->
+     <a href="companyIntroduction.aspx?qv=bb" >
+		<img src="centralscreenimages/smallview/bikenbike1.jpg" alt="Biken Bike" width="250" height="118" title="All Motorcycle"  
+        rel="<h3>Biken Bike</h3>We sell all kind of motorcycles"/>
+	 </a>
+      <!----------------------5-2 bikenbike--------------------->
+    <a href="companyIntroduction.aspx?qv=bb" >
+		<img src="centralscreenimages/smallview/bikenbike2.jpg" alt="Biken Bike" width="250" height="118" title="Motorcyles Parts"  
+        rel="<h3>Biken Bike</h3>We can provide you all kind of motorcycles parts"/>
+	 </a>
+      <!----------------------5-3 bikenbike--------------------->
+     <a href="companyIntroduction.aspx?qv=bb" >
+		<img src="centralscreenimages/smallview/bikenbike3.jpg" alt="Biken Bike" width="250" height="118" title="World wide"  
+        rel="<h3>Biken Bike</h3>We import parts from all over the world"/>
+	 </a>
+      <!----------------------5-4 bikenbike--------------------->
+     <a href="companyIntroduction.aspx?qv=bb" >
+		<img src="centralscreenimages/smallview/bikenbike4.jpg" alt="Biken Bike" width="250" height="118" title="Help in Import"  
+        rel="<h3>Biken Bike</h3>We can help in importing parts and motorcycles from Japan"/>
+	 </a>
+      <!----------------------5-5 bikenbike--------------------->
+      <a href="companyIntroduction.aspx?qv=bb" >
+		<img src="centralscreenimages/smallview/bikenbike5.jpg" alt="Biken Bike" width="250" height="118" title="Less Rates Better Quality"  
+        rel="<h3>Biken Bike</h3>We provide at cheap rate and better quality"/>
+	 </a>
+      <!----------------------6-1 bikenbike--------------------->
+      <a href="companyIntroduction.aspx?qv=bs" >
+		<img src="centralscreenimages/smallview/badishop1.jpg" alt="Badi Shops" width="250" height="118" title="We deals in all kind of food items"  
+        rel="<h3>Badi Shops</h3>We deals in all kind of food items"/>
+	 </a>
+      <!----------------------6-2 bikenbike--------------------->
+      <a href="companyIntroduction.aspx?qv=bs" >
+		<img src="centralscreenimages/smallview/badishop2.jpg" alt="Badi Shops" width="250" height="118" title="We provide better quality rice and foods"  
+        rel="<h3>Badi Shops</h3We provide better quality rice and foods"/>
+	 </a>
+     <!----------------------6-3 bikenbike--------------------->
+      <a href="companyIntroduction.aspx?qv=bs" >
+		<img src="centralscreenimages/smallview/badishop3.jpg" alt="Badi Shops" width="250" height="118" title="We provide better deals"  
+        rel="<h3>Badi Shops</h3>We provide better deals"/>
+	 </a>
+     <!----------------------Caption--------------------->
+	<div class="caption"><div class="content"></div></div>
+    </div>
+
+    
+     <div id="GroupOfCompanies">  
+        <a href="companyIntroduction.aspx?qv=bs" >
+        <img alt="" src="frontimages/SmallPics/BadiShop_Logo.gif" /></a>
+        <a href="companyIntroduction.aspx?qv=bc" >
+        <img alt="" src="frontimages/SmallPics/BlackCopper_Logo.gif" /></a>
+        <a href="companyIntroduction.aspx?qv=bb" >
+        <img alt="" src="frontimages/SmallPics/BikenBike_Logo.gif" /></a>
+        <a href="companyIntroduction.aspx?qv=wa" >
+        <img alt="" src="frontimages/SmallPics/WebArt_Logo.gif" /></a>
+        <a href="companyIntroduction.aspx?qv=mb" >
+        <img alt="" src="frontimages/SmallPics/MBCom_Logo.gif" /></a>
+    
+    </div>
+     
+    
+</div>
+
+
+
+
+<div id="Master3SidedCenterBar">
+ <asp:ContentPlaceHolder ID="ContentMasterPageWithRightLatestProductsCenterBar" 
+        runat="server">
+    </asp:ContentPlaceHolder>
+</div>
+
+
+</asp:Content>

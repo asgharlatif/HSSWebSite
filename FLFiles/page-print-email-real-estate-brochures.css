@@ -1,0 +1,33 @@
+#fullcenter .left {
+	float: left; display: block;
+}
+#fullcenter .right {
+	float: right; display: block;
+}
+#fullcenter .clear {
+	clear: both; float: none; display: block;
+}
+#fullcenter div.carousel {
+	margin: 0px auto; width: 570px; text-align: center;
+}
+#fullcenter div.carousel object {
+	margin-top: -48px;
+}
+#fullcenter div.carousel h2 {
+	background: rgb(255, 255, 255); margin-top: -30px; position: relative;
+}
+#fullcenter div.brochure {
+	width: 280px; padding-top: 15px; margin-right: 25px;
+}
+#fullcenter div.brochure fieldset {
+	background: rgb(228, 231, 233); margin: 10px 7px 7px 9px; border: 1px solid rgb(197, 192, 205); color: rgb(110, 110, 110); padding-bottom: 0px;
+}
+#fullcenter div.brochure fieldset legend {
+	color: rgb(38, 29, 52); font-family: "Vollkorn", arial, serif; font-size: 17px;
+}
+#fullcenter div.brochure fieldset input {
+	background: rgb(255, 255, 255); border-width: 1px medium medium 1px; border-style: solid none none solid; border-color: rgb(197, 192, 205) currentColor currentColor rgb(197, 192, 205); padding: 3px; width: 170px; font-size: 12px;
+}
+#fullcenter div.details {
+	width: 600px;
+}

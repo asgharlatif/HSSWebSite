@@ -1,0 +1,70 @@
+﻿
+
+*{outline: none;}
+img {border: 0;}
+.container {
+	width: 790px;
+	padding: 0;
+	margin: 0 auto;
+}
+.folio_block {
+	position: absolute;
+	left: 50%; top: 50%;
+	margin: -140px 0 0 -395px;
+}
+
+
+/*--Main Container--*/
+.main_view {
+	float: left;
+	position: relative;
+}
+/*--Window/Masking Styles--*/
+.window {
+	height:314px;	width:671px;
+	overflow: hidden; /*--Hides anything outside of the set width/height--*/
+	position: relative;
+}
+.image_reel {
+	position: absolute;
+	top: 0; left: 0;
+}
+.image_reel img {float: left;}
+
+/*--Paging Styles--*/
+.paging
+{
+	border-style: none none solid none;
+	border-width: thin;
+	border-color: #C0C0C0;
+	padding: 0px;
+	position: absolute;
+	right: 0px;
+	width: 668px; /*height: 47px;*/
+	z-index: 100; /*--Assures the paging stays on the top layer--*/
+	text-align: left;
+	line-height: 12px;
+	background: no-repeat;
+	display: none;
+	float: left;
+	background-color: #DDE3EE;
+	top: 0px;
+}
+.paging a
+{
+	margin: 0px 5px 0px 5px;
+	padding: 0px;
+	text-decoration: none;
+	color: #000000;
+}
+.paging a.active
+{
+	font-weight: normal;
+	background: #C0C0C0;
+	border: 0px none #610000;
+	-moz-border-radius: 0px;
+	-khtml-border-radius: 0px;
+	-webkit-border-radius: 0px;
+}
+.paging a:hover {font-weight: bold;}
+

@@ -1,0 +1,42 @@
+﻿div #Master3SidedLeftBar
+{
+	border: 1px solid #f3f3f3;
+	float: left;
+	width: 250px;
+	clear: both;
+	height: 390px;
+}
+
+div #GroupOfCompanies
+{
+	padding: 5px 0px 0px 20px;
+	border-style: none;
+	border-width: 1px;
+	float: left;
+	width: 210px;
+	height: 220px;
+	margin-top: 5px;
+	margin-left: 5px;
+	clear: both;
+}
+
+div #GroupOfCompanies img
+{
+	width: 100px;
+	height: 70px;
+}
+
+div #Master3SidedCenterBar
+{
+	border: 1px solid #f3f3f3;
+	width: 675px;
+	float: left;
+	padding-left: 0px;
+	min-height: 390px;
+}
+
+
+div #ContentMasterPageWithRightLatestProductsRigthBarcss
+{
+	
+}

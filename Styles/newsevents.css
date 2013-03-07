@@ -1,0 +1,168 @@
+﻿#inner-body
+{
+	color: #000000;
+	clear: both;
+}
+
+#upper-body
+{
+	padding: 15px 0px 0px 0px;
+	
+	clear: both;
+}
+
+#inner-body img
+{
+	width: 250px;
+	height: 200px;
+}
+
+#inner-body h1
+{
+	color: #9CAAC1;
+	font-size: 25px;
+	font-weight: bold;
+	padding: 0 0 0px 0;
+}
+
+
+
+#inner-body #inner-body-left-full
+{
+	float: left;
+	font-size: 12px;
+	width: 897px;
+	padding: 10px;
+	color: #000000;
+}
+
+#inner-body #inner-body-left a
+{
+	text-decoration:none;
+	
+	
+}
+
+#inner-body #inner-body-left
+{
+	float: left;
+	font-size: 12px;
+	width: 677px;
+	padding: 10px;
+	
+}
+
+#inner-body #inner-body-left label
+{
+	
+	display: block;
+}
+
+#inner-body #inner-body-left ul.static, #inner-body #inner-body-left-full ul.static
+{
+	padding: 5px 0px 5px 40px;
+}
+
+#inner-body #inner-body-left ul.static li, #inner-body #inner-body-left-full ul.static li
+{
+	padding:0 0 3px 0;
+}
+
+#inner-body #inner-body-left p
+{
+	margin: 10px 0 0 0;
+	padding: 4px;
+}
+
+#inner-body #inner-body-left h2, #inner-body #inner-body-left-full h2
+{
+	padding: 10px 0 5px 0;
+	color: #000000;
+	font-size: 14px;
+	text-transform: uppercase;
+	border-bottom: #666 dotted 1px;
+}
+
+
+
+#inner-body #inner-body-right 
+{
+    float:right;
+    font-size:12px;
+    width:320px;
+    padding:5px;
+    overflow:hidden;
+    color:White;
+}
+
+#inner-body #inner-body-right blockquote
+{
+color: #928E8E;
+font-size: 16px;
+font-weight: bold;
+text-transform:uppercase;
+
+}
+
+#inner-body #inner-body-right p 
+{
+    border-bottom:solid 1px #484848;
+    padding:0 0 20px 0;
+}
+
+#inner-body #inner-body-right h4, #inner-body #inner-body-right h4 a:link, #inner-body #inner-body-right h4 a:visited
+{
+    padding:10px 0 0 0;
+    color: #F6F5BF;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform:uppercase;
+	text-decoration:none;
+}
+
+#inner-body #inner-body-right a:link, #inner-body #inner-body-right a:visited
+{
+	color: #000000;
+	text-decoration: none;
+	font-size: 12px;
+}
+
+#inner-body #inner-body-right a:hover
+{
+	color: #000000;
+	text-decoration: underline;
+}
+
+#inner-body #inner-body-right .buttonsmall
+{
+    color:#fff;
+    text-decoration:none;
+    background-color:Black;
+    font-size:11px;
+    border:solid 1px #666;
+}
+
+#inner-body .floatLeft
+{
+	float:left;
+}
+
+#inner-body #inner-body-right dl
+{
+    color:#fff;
+    font-size:12px;
+}
+
+#inner-body #inner-body-right dl a:link, #inner-body #inner-body-right dl a:visited
+{
+	color: #000000;
+	text-decoration: none;
+	font-size: 12px;
+}
+
+#inner-body #inner-body-right dl a:hover
+{
+    color:#fff;
+    text-decoration:underline;
+    font-size:12px;
+}

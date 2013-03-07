@@ -1,0 +1,12 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/MasterPageWithRightLatestProducts.master" AutoEventWireup="true" CodeFile="MMainPage.master.cs" Inherits="MMainPage" %>
+
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentMasterPageWithRightLatestProductsRigthBar" Runat="Server">
+    <asp:ContentPlaceHolder ID="CentralContent" runat="server"/>
+    <asp:ContentPlaceHolder ID="SomeTextContent" runat="server"/>
+    <asp:ContentPlaceHolder ID="CompaniesContent" runat="server"/>
+    <asp:ContentPlaceHolder ID="CompaniesIntroductionContent" runat="server"/>
+    <asp:ContentPlaceHolder ID="BusinessPartnerContent" runat="server"/>
+    <asp:ContentPlaceHolder ID="BusinessPartnerLogoContent" runat="server"/>
+    
+</asp:Content>
+

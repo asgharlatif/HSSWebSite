@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+	flShow Carousel 2.0 configuration file
+	Please visit http://www.flshow.net/ for more info
+-->
+
+<slide_show>
+  <options>
+    <debug>false</debug>
+    <background>transparent</background>
+    <!-- #RRGGBB, transparent -->
+    <margins>
+      <vertical_ratio>43%</vertical_ratio>
+      <top>-40</top>
+    </margins>
+    <interaction>
+      <speed>45</speed>
+      <!-- [-360,360] degrees per second -->
+      <default_speed>5</default_speed>
+      <default_view_point>40%</default_view_point>
+      <!-- [0,100] percentage -->
+      <reset_delay>5</reset_delay>
+      <!-- [0,600] seconds, 0 means never reset -->
+      <rotation>mouse</rotation>
+      <!-- auto, mouse, keyboard -->
+      <view_point>none</view_point>
+      <!-- none, mouse, keyboard -->
+    </interaction>
+
+    <far_photos>
+      <size>10%</size>
+      <!-- [0,100] percentage -->
+      <amount>80%</amount>
+      <!-- [0,100] percentage -->
+      <blur>40</blur>
+      <!-- [0,100] amount -->
+      <blur_quality>3</blur_quality>
+      <!-- [1,3] 1=low - 3=high -->
+    </far_photos>
+
+    <titles>
+      <style>font-size: 12px; font-family: Verdana, _serif; color: #333333;</style>
+      <position>above right</position>
+      <!-- [above, below] [left,center,right]-->
+
+      <scale9>10 10 10 10</scale9>
+      <!-- [0,1000] pixels -->
+      <padding>5 5 5 5</padding>
+      <!-- [-1000,1000] pixels -->
+    </titles>
+
+
+  </options>
+
+  <photo href="javascript:aclick('anchor1_id')" target="_self">centralscreenimages/largeview/badishop1.jpg</photo>
+  <photo href="javascript:aclick('anchor2_id')" target="_self">centralscreenimages/largeview/badishop2.jpg</photo>
+  
+  <photo href="javascript:aclick('anchor3_id')" target="_self">centralscreenimages/largeview/badishop3.jpg</photo>
+  
+  <photo href="javascript:aclick('anchor4_id')" target="_self">centralscreenimages/largeview/bikenbike1.jpg</photo>
+  <photo href="javascript:aclick('anchor5_id')" target="_self">centralscreenimages/largeview/bikenbike2.jpg</photo>
+  <photo href="javascript:aclick('anchor6_id')" target="_self">centralscreenimages/largeview/bikenbike3.jpg</photo>
+  <photo href="javascript:aclick('anchor7_id')" target="_self">centralscreenimages/largeview/bikenbike4.jpg</photo>
+  <photo href="javascript:aclick('anchor8_id')" target="_self">centralscreenimages/largeview/bikenbike5.jpg</photo>
+  <photo href="javascript:aclick('anchor9_id')" target="_self">centralscreenimages/largeview/blackcopper1.jpg</photo>
+  <photo href="javascript:aclick('anchor10_id')" target="_self">centralscreenimages/largeview/blackcopper2.jpg</photo>
+  <photo href="javascript:aclick('anchor11_id')" target="_self">centralscreenimages/largeview/mb1.jpg</photo>
+  <photo href="javascript:aclick('anchor12_id')" target="_self">centralscreenimages/largeview/mb2.jpg</photo>
+
+
+</slide_show>

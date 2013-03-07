@@ -1,0 +1,14 @@
+﻿
+ ul
+        {
+        list-style-type:none;
+        padding:0px;
+        margin:0px;
+        }
+        li
+{
+	background-image: url('../frontimages/background/sqpurple.gif');
+	background-repeat: no-repeat;
+	background-position: 0px 5px;
+	padding-left: 14px;
+}

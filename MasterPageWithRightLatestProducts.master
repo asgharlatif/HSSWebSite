@@ -1,0 +1,85 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Site.master" AutoEventWireup="true" CodeFile="MasterPageWithRightLatestProducts.master.cs" Inherits="MasterPageWithRightLatestProducts" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="MainContent" Runat="Server">
+    
+<div class="MasterPageWithRightLatestProductsRigthBarCss">
+    <asp:ContentPlaceHolder ID="ContentMasterPageWithRightLatestProductsRigthBar" runat="server"/>
+</div>
+
+<div class="MasterPageWithRightLatestProductsLeftBarCss">
+
+    <div class="LatestProductsContentCss" align="center">  
+
+          
+          <asp:DataList ID="DataList1" runat="server"  
+              onselectedindexchanged="DataList1_SelectedIndexChanged" RepeatColumns="1" 
+            RepeatDirection="Horizontal" BorderColor="#000066" BorderStyle="Solid"   
+              BorderWidth="0px" Width="16px" Height="558px">
+        <ItemTemplate>
+            <table id="TblPrdHotSaleMainDiv">
+                <tr>
+                    <td valign="top">
+                       <table cellpadding="0" cellspacing="0">
+                            
+
+                                <tr>
+                                <td  width="220px" align="center"	height="156px"  valign="middle" >        
+                                <a href="productinquiry.aspx?ProductId=<%# Eval("productid") %>">                            
+                                   <img  alt="" src='<%# "thumbnail.aspx?Image=Images/ProductMainImages/" + Eval("mainimage")  %>'   />           
+                                    </a>
+                                </td>
+                            </tr>
+                                <tr>
+                                <td  align="left" height="20" valign="top"  id="BottomTdC">
+                                    
+                                    <asp:CheckBox ID="CheckBox1"  runat="server" /><a href="productinquiry.aspx?ProductId=<%# Eval("productid") %>"><%# Eval("producttitle") %></a>                                   
+                                    
+                                </td>
+                                </tr>
+
+                            
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </ItemTemplate>
+    </asp:DataList>
+
+
+    </div>
+     <div class="SubscriptionContentCss">
+      <table cellpadding="0" cellspacing="0" style="width: 100%; height: 90px;">
+                                        <tr>
+                                            <td>
+                                                &nbsp;
+                                            </td>
+                                            <td>
+                                                <img alt="" class="style14" src="frontimages/SmallPics/NewsLetterHeader.gif" />
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <img alt="" src="frontimages/SmallPics/NewsLetterEmail.gif" />
+                                            </td>
+                                            <td>
+                                                <asp:TextBox ID="TextBox2" runat="server" Width="175px"></asp:TextBox>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                &nbsp;
+                                            </td>
+                                            <td>
+                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                <img alt="" src="frontimages/SmallPics/NewsLetterButton.gif" />&nbsp;&nbsp;
+                                                <asp:Image ID="Imageface" runat="server" ImageUrl="~/frontimages/logo/facebook.png" />
+                                                &nbsp;<asp:Image ID="Imagetwitter" runat="server" ImageUrl="~/frontimages/logo/twitter.png" />
+                                            </td>
+                                        </tr>
+                                    </table>
+     </div>
+</div>
+
+
+</asp:Content>
+

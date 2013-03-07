@@ -1,0 +1,383 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Site.master.cs" Inherits="SiteMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head runat="server">
+    <title></title>
+    <script src="Scripts/jquery-1.4.1.min.js" type="text/javascript"></script>
+    <script src="Scripts/jquery-1.4.1.js" type="text/javascript"></script>
+    <script src="Scripts/ylibclass.js" type="text/javascript"></script>
+    <script src="Scripts/jquery.js" type="text/javascript"></script>
+    <script src="Scripts/abouthecompanypartners.js" type="text/javascript"></script>
+
+    <link href="Styles/HeaderSection.css" rel="stylesheet" type="text/css" />
+    <link href="Styles/sitemap.css" rel="stylesheet" type="text/css" />
+    <link href="Styles/mbblackcopcss.css" rel="stylesheet" type="text/css" />
+    <link href="Styles/signup.css" rel="stylesheet" type="text/css" />
+    <link href="Styles/ulloolSetting.css" rel="stylesheet" type="text/css" />
+    <link href="Styles/newsevents.css" rel="stylesheet" type="text/css" />
+    <link href="Styles/copyrightStatusbar.css" rel="stylesheet" type="text/css" />
+    <meta name="description" content="HSS - The leading online computer store in Karachi Pakistan; offering online shopping with free shipping, best prices with special deals and discounts on website. Brands include Acer Apple Dell HP Sony Compaq Toshiba and many more. Products include laptops, computer accessories, network products, cabling products, networking rack, connector cable, power backup, wireless router, barcode reader, scanner, fiber cable, network switch, modem, print server and much more" />
+    <meta name="keywords" content="laptops, laptops in Karachi, laptops in Pakistan, used laptops in Karachi, laptop prices in Pakistan, Laptops Karachi, online shopping pakistan, ecommerce in Pakistan, computer hardware, pakistan computer rates, Free shipping in Karachi, Acer, Apple, Dell, HP, sony, compaq, Toshiba, Computer Accessories, network products, cabling products, networking rack, connector cable, power backup, memory card, wireless product, wireless router, barcode reader, scanner, web cam, fiber cable, network switch, lan card, modem, print server" />
+    <link href="Styles/MasterLeftRightCenterPages.css" rel="stylesheet" type="text/css" />
+    <link href="Styles/MasterPageWithRightLatestProducts.css" rel="stylesheet" type="text/css" />
+    <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
+    <link href="~/Styles/allabout.css" rel="stylesheet" type="text/css" />
+     <link href="~/Styles/product.css" rel="stylesheet" type="text/css" />
+    <link href="~/Styles/CentralImageChange.css" rel="stylesheet" type="text/css" />
+    <link href="~/Styles/TableFormatting.css" rel="stylesheet" type="text/css" />
+    <link href="~/Styles/ToolbarSetting.css" rel="stylesheet" type="text/css" />
+    <script src="Scripts/jquery.js" type="text/javascript"></script>
+    <script src="Scripts/jquery.color.js" type="text/javascript"></script>
+
+    <script language="javascript" src="Scripts/JScript.js" type="text/javascript"> </script>  
+    <script src="Scripts/product.js" type="text/javascript"></script>
+
+    <script src="Scripts/accordion.js" type="text/javascript"></script>
+
+    <script language="javascript"  type="text/javascript">
+
+        
+        if ($) {
+            $(document).ready(function () {
+
+
+                if (queryObj["dispid"] == "idPrdDipCategoryWise") {
+
+                    $("#idPrdDipCategoryWise").css('display', 'block');
+                    $("#idPrdDipCategoryWiseSpecificCategory").css('display', 'none');
+                }
+                else if (queryObj["dispid"] == "idPrdDipCategoryWiseSpecificCategory") {
+
+                    $("#idPrdDipCategoryWise").css('display', 'none');
+                    $("#idPrdDipCategoryWiseSpecificCategory").css('display', 'block');
+                }
+
+
+            })
+        }
+        function toggleDisplayDiv() {
+
+
+            var DispStyle = document.quer
+            var ele = document.getElementById("toggleText");
+            var text = document.getElementById("displayText");
+            if (ele.style.display == "block") {
+                ele.style.display = "none";
+                text.innerHTML = "show";
+            }
+            else {
+                ele.style.display = "block";
+                text.innerHTML = "hide";
+            }
+        } 
+    </script>
+     
+    <script language="javascript" type='text/javascript'>
+
+
+
+        //---------------------------------------------------------------------
+        function hideDiv() {
+            if (document.getElementById) { // DOM3 = IE5, NS6 
+                document.getElementById('hideShow').style.visibility = 'hidden';
+            }
+            else {
+                if (document.layers) { // Netscape 4 
+                    document.hideShow.visibility = 'hidden';
+                }
+                else { // IE 4 
+                    document.all.hideShow.style.visibility = 'hidden';
+                }
+            }
+        }
+        //---------------------------------------------------------------------
+        function showDiv() {
+            if (document.getElementById) { // DOM3 = IE5, NS6 
+                document.getElementById('hideShow').style.visibility = 'visible';
+            }
+            else {
+                if (document.layers) { // Netscape 4 
+                    document.hideShow.visibility = 'visible';
+                }
+                else { // IE 4 
+                    document.all.hideShow.style.visibility = 'visible';
+                }
+            }
+        }
+
+        //---------------------------------------------------------------------
+
+        $(document).ready(function () {
+
+            $(".menu2 a").append("<em></em>");
+
+            $(".menu2 a").hover(function () {
+                $(this).find("em").animate({ opacity: "show", top: "-75" }, "slow");
+                var hoverText = $(this).attr("title");
+                $(this).find("em").text(hoverText);
+            }, function () {
+                $(this).find("em").animate({ opacity: "hide", top: "-85" }, "fast");
+            });
+
+
+        });
+
+        //---------------------------------------------------------------------
+        $(document).ready(function () {
+            hrefloadfunc();
+            hrefclickfunc();            
+        });
+
+        $(document).ready(function () {            
+            $('div.PrdInLinePrdDiv:even').addClass('PrdInLinePrdDivBackColor');
+        });
+
+        //---------------------------------------------------------------------
+
+
+        $(document).ready(function () {
+
+            //jQuery(this).attr('title') != 'Product Inquiry' &&
+
+            if (jQuery(this).attr('title') != 'Home Page' && jQuery(this).attr('title') != 'Sign up form'
+            &&  jQuery(this).attr('title') != 'Send Quotation'
+            && jQuery(this).attr('title') != 'Company Introduction' && jQuery(this).attr('title') != 'login form'
+            && jQuery(this).attr('title') != 'News-Category' && jQuery(this).attr('title') != 'News-Detail'
+            && jQuery(this).attr('title') != 'thank you'
+            && jQuery(this).attr('title') != 'Feedback'
+            && jQuery(this).attr('title') != 'SITE MAP'
+            
+
+
+            ) {
+                var lochash = jQuery(this).attr('title');
+                switch (lochash) {
+                    case "Product Display Center": case "Contact Us": case "Product Inquiry": case "CEO Message":
+                    case "Mission Statement": case "Vision Statement": case "Partners":case "Shopping Cart":
+                        $('div#SiteMapDiv2Part').removeClass('SiteMapDiv2Partcls');
+                        $('div#SiteMapDiv2Part').addClass('SiteMapDiv3Partcls');
+                        $('div .SiteMapDiv3Partcls').css('display', 'block');
+                        break;
+                    default:
+                        $('div .SiteMapDiv2Partcls').css('display', 'block');
+                        break;
+                }
+            }
+        });
+
+
+
+       
+
+    </script>  
+    <link href="Styles/accordion.css" rel="stylesheet" type="text/css" />
+
+</head>
+<body>
+    <form runat="server">
+    <a name="CompHeaderURL"></a>
+    
+    <div class="page">
+        <div class="header">
+            
+                <div style="width: 930px; height: 100px;">
+                
+                
+                    <div style="float: left; width: 240px;  height: 100px;"> 
+                    
+                        <asp:Image ID="Image1" runat="server" 
+                            ImageUrl="~/frontimages/mainpageimages/SmallLogo.jpg" />
+                    </div>
+
+                
+                    <div    style="   width: 680px;height: 100px; float: right;" >                 
+                            
+                            <div id="HeaderLinks" 
+                                
+                                style="margin: 0px; border-style: none; padding: 52px 0px 0px 230px; width: 240px; height: 40px; float: left; left: 0px;">
+                                   
+                                   <a href="Default.aspx"> Home</a> | <a href="#"> Career </a> |
+                                   
+                                  
+
+                                   <asp:HyperLink ID="LoginHyperLink" runat="server" NavigateUrl="~/login.aspx">  Member Login</asp:HyperLink>
+
+                                   <asp:HyperLink ID="LogoutHyperLink" runat="server" NavigateUrl="~/Default.aspx?action=logout">  Logout</asp:HyperLink>
+                            </div>
+                            <div class="HeaderSearchSection">
+                                    
+                                    <div id="HeaderSearchSectionBasket">
+                                        
+                                        <a href="cart.aspx">
+                                        <asp:Image ID="imgcart" runat="server" />                                      
+                                        
+                                        </a>
+                                    </div>
+                                    
+                                    <div id="InnerHeaderSearchSection">
+                                        <div id="SearchTextBox">
+                                          <asp:TextBox ID="TextBox1"  Width="170px"   runat="server"    Text="Search.."
+                                          onfocus="if(this.value == 'Search..') {this.value = '';}" 
+                                          onblur="if (this.value == '') {this.value = 'Search..';}"
+
+                                       Height="18px" BorderStyle="none" ></asp:TextBox>
+
+                                        </div>
+                                        <div style=" float: right; background-image: url('/HSSWebSite/frontimages/mainpageimages/SearchImage.gif'); background-repeat: no-repeat; width: 20px; height: 24px;"></div>
+                                   </div>
+
+                                   <div id="DivShowLoginId">
+                                       <asp:HyperLink ID="Emailhyperlink" runat="server" NavigateUrl="~/edituserprofile.aspx">Email:- asgharlatif@hotmail123456.com</asp:HyperLink>
+                                   </div>
+                               </div>
+                    </div>
+              </div>
+    
+
+                        
+            <div  class="hideSkiplink">
+              
+              
+                <ul id="ul-table" >
+                <li class="top"><a href="Default.aspx" title="Home page">Home</a></li> 
+                <li class="top"><a href="aboutus.aspx?flag=3&city=karachi" title="Company introduction">About Us</a></li> 
+                <li class="top"><a href="productviewgallery.aspx?dispid=idPrdDipCategoryWise&pv=productviewgallery" title="Product being offered by Hs&S">Products</a></li> 
+                <li class="top"><a href="" title="Service/Supports being offered by Hs&S">Services</a></li> 
+                <li class="top"><a href="inquireaboutus.aspx?flag=3&amp;city=Karachi" title="Contact us for more detail" >Feedback</a></li> 
+                <li class="top right"><a href="sitemap.aspx" title="Site Map">Site Map</a></li>  
+                <li class="top right"><a href="News-Category.aspx?NewsCategoryId=5" title="Site Map">News & Events</a></li>  
+                  
+                </ul> 
+
+                
+
+                <div class="clear"></div>
+           </div> 
+            
+
+
+            <div class="FlagDiv">
+                    <table align="center" cellpadding="0" cellspacing="0" class="style1" 
+                        width="100%">
+                        <tr>
+                            <td>
+                               
+                               <a href="contactus.aspx#flag1"> <img alt="" border="0" src="frontimages/SmallPics/Flag1.gif"  /></a>
+                            </td>
+                            <td>
+                               <a href="contactus.aspx#flag2"> <img alt="" border="0" src="frontimages/SmallPics/Flag2.gif"  /></a></td>
+                            <td>
+                               <a href="contactus.aspx#flag3"> <img alt="" border="0" class="style4" src="frontimages/SmallPics/Flag3.gif" /></a></td>
+                            <td>
+                               <a href="contactus.aspx#flag4"> <img alt="" border="0" class="style5" src="frontimages/SmallPics/Flag4.gif" /></a></td>
+                            <td>
+                               <a href="contactus.aspx#flag5"> <img alt="" border="0" class="style6" src="frontimages/SmallPics/Flag5.gif" /></a></td>
+                            <td>
+                               <a href="contactus.aspx#flag6"> <img alt="" border="0" class="style7" src="frontimages/SmallPics/Flag6.gif" /></a></td>
+                            <td>
+                                &nbsp;</td>
+                        </tr>
+                    </table>
+            </div>
+
+
+        </div>
+
+         <div class="main">
+
+            <div id="SiteMapDiv2Part" class="SiteMapDiv2Partcls"> 
+
+            <asp:SiteMapPath ID="SiteMapPath1" runat="server" PathSeparator="">
+                <NodeStyle Width="105px" />
+            
+            </asp:SiteMapPath>
+            
+            </div>
+
+           
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                
+            </asp:ContentPlaceHolder>
+             
+        </div>
+               
+
+         <div class="copyrightContentCss">
+         
+         
+                <span id="idcopyrightContentCssL"></span>
+                <span id="idcopyrightContentCssC">
+                    <span id="copyrightContentCssC_copyright">Copyright 2011 HS&S Company. All Rights Reserved.</span>
+                    <span id="idfeedback">|&nbsp;&nbsp;<a href="inquireaboutus.aspx"> Feedback</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</span>
+                    <span id="idFAQ">&nbsp;&nbsp;<a href="faqsection.aspx?SectionId=1">FAQ</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</span>
+                    <span id="idTermofUse">&nbsp;&nbsp;<a href="termscondition.aspx">Terms of Use</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</span>
+                    <span id="idPrivacy">&nbsp;&nbsp; <a href="privacy.aspx">Privacy and Network Safety Policy</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</span>
+                    <span id="idtop"><a href="#CompHeaderURL">TOP</a></span>
+
+                </span>
+
+
+                <span id="idcopyrightContentCssR"></span>
+
+        
+
+                
+         </div>    
+
+         <div id="hideShow" class="statusbarContentCss">    
+             <table cellpadding="0" cellspacing="0" class="style1">
+        <tr>
+            <td>
+                <img alt="" class="style2" src="frontimages/SmallPics/statusbar_1.gif" /></td>
+            <td style="padding: 0px 0px 3px 0px">
+                 <asp:TextBox ID="TextBox3" runat="server" Height="14px" Width="170px"></asp:TextBox></td>
+            <td>
+                <img alt="" class="style4" src="frontimages/SmallPics/statusbar_2.gif" /></td>
+            <td>
+                <img alt="" class="style5" src="frontimages/SmallPics/statusbar_3.gif" /></td>
+            <td>
+                <img alt="" class="style6" src="frontimages/SmallPics/statusbar_4.gif" /></td>
+            <td>
+                <img alt="" class="style7" src="frontimages/SmallPics/statusbar_5.gif" /></td>
+            <td>
+                <img alt="" class="style8" src="frontimages/SmallPics/statusbar_6.gif" /></td>
+            <td>
+                <img alt="" class="style9" src="frontimages/SmallPics/statusbar_7.gif" /></td>
+            <td style="width: 260px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </td>
+            <td>
+                <img alt="" class="style10" src="frontimages/SmallPics/statusbar_8.gif" /></td>
+            <td>
+                <img alt="" class="style11" src="frontimages/SmallPics/statusbar_9.gif" /></td>
+            <td>
+
+            <a  id="slick-toggle" href="#">           
+                <img border="0"  alt="" src="frontimages/SmallPics/statusbar_10.gif" />
+            </a>
+
+                </td>
+            <td>
+                <a href="javascript:hideDiv()">
+                <img alt="" border="0" class="style13" src="frontimages/SmallPics/statusbar_11.gif" /></a></td>
+        </tr>
+    </table>
+          </div>    
+
+          `
+    <div class="clear">
+    </div>
+
+
+    </div>
+
+
+    
+    <asp:ScriptManager ID="ScriptManager1" runat="server" >
+    </asp:ScriptManager>
+
+
+    
+    </form>
+</body>
+</html>

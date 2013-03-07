@@ -1,0 +1,195 @@
+﻿div.MasterAboutUsLeftBarCss
+{
+	margin: 1px 0px 0px 0px;
+	padding: 0px;
+	border: thin solid #C0C0C0;
+	min-height: 400px;
+	float: left;
+	width: 200px;
+} 
+div.MasterAboutCompanyLeftBarCss
+{
+	margin: 4px 0px 0px 0px;
+	padding: 0px;
+	border: thin solid #C0C0C0;
+	min-height: 450px;
+	float: left;
+	width: 200px;
+	position: absolute;
+	top: 167px;
+}
+div.MasterAboutUsRigthBarCss
+{
+	margin: 2px 0px 0px 0px;
+	padding: 0px;
+	border: thin solid #C0C0C0;
+	min-height: 450px;
+	float: right;
+	width: 720px;
+} 
+div.aboutsmalldivh
+{
+	padding: 7px 5px 0px 5px;
+	margin: 1px;
+	background-image: url('../frontimages/background/centerstatusbar29.gif');
+	background-repeat: repeat-x;
+	height: 30px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #FFFFFF;
+	font-size: 16px;
+	text-align: center;
+}
+
+
+
+div.aboutmaindivh
+{
+	border-style: solid;
+	border-width: thin;
+	padding: 7px 5px 0px 5px;
+	margin: 0px;
+	background-image: url('../frontimages/background/TitleHeadW1835H.jpg');
+	background-repeat: repeat-x;
+	height: 20px;
+	font-family: 'Adobe Heiti Std R';
+	color: #FFFFFF;
+	text-align: left;
+	vertical-align: middle;
+	cursor: pointer;
+}
+
+div.aboutmaindivd
+{
+	padding: 7px 5px 0px 5px;
+	margin: 5px;
+	text-align: justify;
+	min-height: 400px;
+	font-family: Sylfaen;
+	color: #000000;
+	font-size: medium;
+}
+
+div.companyprofilesmalldivh
+{
+	padding: 7px 5px 0px 5px;
+	margin: 0px;
+	background-image: url('../frontimages/background/centerstatusbar29.gif');
+	background-repeat: repeat-x;
+	height: 30px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #FFFFFF;
+	font-size: medium;
+	text-align: center;
+}
+div.companyprofilemaindivd
+{
+	padding: 0px 5px 0px 5px;
+	margin: 0px 5px 0px 5px;
+	text-align: justify;
+	font-family: Sylfaen;
+	color: #000000;
+	font-size: medium;
+}
+
+
+
+/*----------------*/
+
+div.vmenucompanyprofile
+{
+    padding: 4px 0px 4px 8px;
+}
+
+div.vmenucompanyprofile ul
+{
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+	width: 120px;
+}
+
+div.vmenucompanyprofile ul li a, div.vmenucompanyprofile ul li a:visited
+{
+	border: 1px #4e667d solid;
+	color: #990000;
+	display: block;
+	line-height: 1.35em;
+	padding: 4px 37px 5px 5px;
+	text-decoration: none;
+	white-space: nowrap;
+	background-repeat: repeat-x;
+	background-color: #FFFFFF;
+	font-size: medium;
+}
+
+div.vmenucompanyprofile ul li a:hover
+{
+	background-color: #F8F8F8;
+	color: #465c71;
+	text-decoration: none;
+}
+
+div.vmenucompanyprofile ul li a:active
+{
+	color: #cfdbe6;
+	text-decoration: none;
+	background-image: url('../frontimages/mainpageimages/ToolbarImgPix.gif');
+	background-repeat: repeat-x;
+}
+/* FORM ELEMENTS   
+----------------------------------------------------------*/
+
+.termsandcondition
+{
+	background-position: 140px 10px;
+	margin-right: 25px;
+	background-image: url('../frontimages/background/Terms-of-Use.jpg');
+	background-repeat: no-repeat;
+}
+.PrivacyDiv
+{
+	margin: 0px 20px 0px 20px;
+	text-align: center;
+}
+.PrivacyDiv img
+{
+	border: 1px solid #f3f3f3;
+}
+
+
+
+#FAQDiv
+{
+	padding: 10px 15px 0px 15px;
+	border: 1px solid #000000;
+	background-color: #f3f3f3;
+	margin-bottom: 15px;
+	margin-top: 5px;
+}
+
+#FAQDiv p
+{
+	color: #222222;
+	font-size: 1.1em;
+	font-weight: normal;
+	line-height: 24px;
+	margin: 0 0 0.46em;
+	font-family: Georgia;
+}
+
+#FAQDiv a
+{
+	padding: 5px 5px 5px 0px;
+	color: #000080;
+	
+	text-decoration: none;
+	font-family: Georgia;
+}
+
+#FAQDiv a:hover
+{
+	color: #0000FF;
+	text-decoration: underline;
+	font-family: Georgia;
+	
+}

@@ -1,0 +1,150 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Site.master" AutoEventWireup="true" CodeFile="MasterProductDisplay.master.cs" Inherits="MasterProductDisplay" %>
+
+
+<asp:Content ID="Content1" ContentPlaceHolderID="MainContent" Runat="Server">
+
+<link href="App_Themes/Admin/CheckoutProductStyleSheet.css" rel="stylesheet" type="text/css" />
+    <div class="ProductDisplayLeftBarCss">
+        <div class="aboutsmalldivh">
+            Product Categories
+        </div>
+        <div style="width: 135px;  margin-left: 30px;">
+        <div style="width: 165px; ">
+
+
+                 <asp:BulletedList ID="BulletedList2" runat="server" CssClass="vbulletStypeDisplay"
+                    DisplayMode="HyperLink" Height="69px" BulletStyle="CustomImage" 
+                     Width="150px" BulletImageUrl="~/frontimages/logo/iconpic.jpg"   >
+                        
+
+                </asp:BulletedList>
+
+                
+
+        <div class="clear"></div>                                 
+       </div>
+       </div>
+
+       <div class="aboutsmalldivh">
+            Contact
+       </div>
+        
+        <table style="width:100%;height: 100px;" class="contactdisplay">
+            <tr>
+            <td style="padding: 5px 15px 0px 15px; width:50%;height: 100px;">
+                    Mr. 
+                &nbsp;Najeeb Badi<br />
+
+                FA-11/12,First Floor, Technocity
+                Hasrat Mohani Road,Karachi-74200,<br />
+                                    Pakistan
+                                    <br />
+                                    Tel: +92-21-021-2270926-67
+                                    <br />
+                                    Tel: +92-21-021-2216808 
+
+            </td>
+             
+            </tr>
+            </table>
+
+            <div class="ProductDisplayLeftBarFaceTwitter">
+                <h1 style="visibility: hidden">
+                    Read more at</h1>
+                <br />
+                <a href="http://www.facebook.com/pages/asgharlatif" target="_blank">
+                    <asp:Image ID="Imageface" runat="server" ImageUrl="~/frontimages/logo/facebook.png" />Join
+                    us at facebook </a>
+                <br />
+                <a href="http://twitter.com/asgharlatif" target="_blank">
+                    <asp:Image ID="Imagetwitter" runat="server" ImageUrl="~/frontimages/logo/twitter.png" />Tweet
+                    Us Up </a>
+                <br />
+                <a href="http://www.youtube.com/user/masgharlatif" target="_blank">
+                    <img src="frontimages/logo/youtube.jpg" />View us at youtube</a>
+            </div>
+
+    </div>
+
+    <div class="ProductDisplayRigthBarCss">
+        <div class="aboutmaindivh">
+            Products 
+        </div>
+            
+        <div class="PrdDipCategoryWise" id="idPrdDipCategoryWise">    
+                        <asp:BulletedList ID="BulletedList1" runat="server" CssClass="bulletStypeDisplay"
+                            DisplayMode="HyperLink" Height="69px">
+                            
+                        </asp:BulletedList>
+                </div>
+
+         <div class="PrdDipCategoryWiseSpecificCategory" id="idPrdDipCategoryWiseSpecificCategory">   
+                    <div style="width:200px; float: left;"><h2><%=Request.QueryString["catQty"] %></h2></div>
+                        <div style="width:400px;float: right;">
+                        </div>
+                        
+                </div>
+        <div class="PrdDipStyleViewSection">
+            <table class="PrdDipStyleViewSectionT1">
+                <tr valign="middle">
+                    <td valign="middle" style="margin: 0px; padding: 5px 0px 0px 0px; background: #f3f3f3;
+                        width: 50px; font-family: sans-serif; font-size: 10px; height: 20px;">
+                        <a href="productviewgallery.aspx?dispid=<%=Request.QueryString["dispid"] %>&catQty=<%=Request.QueryString["catQty"] %>&categoryid=<%=Request.QueryString["categoryid"] %>">
+                            <img alt="" src="frontimages/logo/viewgallery.jpg" />
+                        </a>
+                    </td>
+                    <td style="padding: 0px; margin: 0px; border-style: none solid none none; border-width: 0px 2px 0px 0px;
+                        border-color: #f3f3f3 #A0A0A0 #f3f3f3 #000000; background: #f3f3f3; width: 70px;
+                        font-family: sans-serif; font-size: 10px;">
+                        <a href="productviewgallery.aspx?dispid=<%=Request.QueryString["dispid"] %>&catQty=<%=Request.QueryString["catQty"] %>&categoryid=<%=Request.QueryString["categoryid"] %>">
+                            View Gallery</a>
+                    </td>
+                    <td style="padding: 5px 0px 0px 5px; margin: 0px; border-style: none; border-width: 0px 1px 0px 1px;
+                        border-color: #f3f3f3 #FF0000 #f3f3f3 #000000; background: #f3f3f3; width: 50px;
+                        font-family: sans-serif; font-size: 10px;">
+                        <a href="productinlinedisplay.aspx?dispid=<%=Request.QueryString["dispid"] %>&catQty=<%=Request.QueryString["catQty"] %>&categoryid=<%=Request.QueryString["categoryid"] %>">
+                            <img alt="" src="frontimages/logo/viewlist.jpg" /></a>
+                    </td>
+                    <td style="padding: 0px; margin: 0px; border-style: none solid none none; border-width: 0px 2px 0px 1px;
+                        border-color: #f3f3f3 #A0A0A0 #f3f3f3 #000000; background: #f3f3f3; width: 80px;
+                        font-family: sans-serif; font-size: 10px;">
+                        <a href="productinlinedisplay.aspx?dispid=<%=Request.QueryString["dispid"] %>&catQty=<%=Request.QueryString["catQty"] %>&categoryid=<%=Request.QueryString["categoryid"] %>">
+                            View List</a>
+                    </td>
+                    <td style="padding: 5px 0px 0px 0px; margin: 0px; border-style: none; border-width: 0px 1px 0px 1px;
+                        border-color: #f3f3f3 #FF0000 #f3f3f3 #000000; background: #f3f3f3; width: 140px;
+                        font-family: sans-serif; font-size: 10px; text-align: right;">
+                        Show
+                        <asp:DropDownList ID="DropDownList1" runat="server">
+                            <asp:ListItem>10</asp:ListItem>
+                            <asp:ListItem>20</asp:ListItem>
+                            <asp:ListItem>30</asp:ListItem>
+                        </asp:DropDownList>
+                        items per page
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="PrdSelectionCheckOut" >
+
+                    <a href="cart.aspx">
+                    <asp:Label ID="lblTotalItems" runat="server" Text="Your Shopping Cart contains (0) items"   CssClass="FormLabel" >
+                     
+                    </asp:Label></a>
+    
+                    <div id="idGoToCart" >
+                    <asp:Button ID="btnGoToCart" runat="server" Text="Checkout"   Width="100%" CssClass="FormButtons" OnClick="GoToCart" />                  
+                    </div>
+
+        </div>
+        
+        <asp:ContentPlaceHolder ID="RightBar" runat="server"/>
+    </div>
+
+
+</asp:Content>
+

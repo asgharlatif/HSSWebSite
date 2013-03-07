@@ -1,0 +1,94 @@
+﻿h3 {
+	margin: 0;
+	padding: 0 0 .3em;
+}
+p {
+	margin: 0;
+	padding: 0 0 .5em;
+}
+.pane
+{
+	padding: 10px 20px 10px;
+	position: relative;
+	border-top: solid 2px #c4df9b;
+	float: left;
+	
+}
+.Emailpane
+{
+	padding: 10px 20px 10px;
+	position: relative;
+	border-top: solid 2px #c4df9b;
+	
+	
+}
+.pane .delete {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	cursor: pointer;
+}
+
+.TblCartData
+{
+	
+}
+
+.TblCartData #ImgTd
+{
+	width: 50px;
+}
+.TblCartData #DescTd
+{
+	width: 490px;
+}
+
+.CartHeaderDiv
+{
+	float: left;
+	
+	width: 670px;
+}
+.CartHeaderDiv #LeftSpan, #LeftSpan1
+{
+	border-style: solid;
+	border-width: 1px;
+	font-family: 'Times New Roman' , Times, serif;
+	font-size: 15px;
+	float: left;
+	color: #FFFFFF;
+	padding-left: 20px;
+	width: 74%;
+	height: 21px;
+	background-image: url('../frontimages/background/centerstatusbar29.gif');
+	background-repeat: repeat-x;
+	padding-top: 4px;
+}
+.CartHeaderDiv #RightSpan, #RightSpan1
+{
+	font-family: 'Times New Roman' , Times, serif;
+	height: 26px;
+	border: 0px none #000000;
+	right: 1px;
+	width: 22%;
+	float: right;
+	text-align: right;
+}
+
+#FLDiv
+{
+	display: none;
+}
+
+#emptycartSpan
+{
+	display: none;
+	font-family: 'Times New Roman' , Times, serif;
+	font-size: 16px;
+	text-align: center;
+	background-image: url('../frontimages/background/centerstatusbar29.gif');
+	background-repeat: repeat-x;
+	color: #FFFFFF;
+	margin-right: 2px;
+	margin-left: 1px;
+}

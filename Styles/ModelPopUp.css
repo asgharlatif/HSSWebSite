@@ -1,0 +1,14 @@
+﻿.PricePanel
+{
+    padding: 10px;
+    background-color: #C0C0C0;
+    filter: alpha(opacity=80);
+    opacity: 0.8;
+    z-index: 10000;
+}
+.pnlpopup
+{
+    background-color: #FFFFFF;
+    vertical-align: top;
+    display: block;
+}

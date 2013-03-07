@@ -1,0 +1,69 @@
+﻿.ThumbBrochures
+{
+    
+    height: 100px;
+    
+}
+.pdffile
+{
+    background-image: url('../admin/images/pdf.jpg');
+    background-repeat: no-repeat;
+    display: block;
+    height: 50px;
+}
+
+.pdf
+{
+    background-image: url('../admin/images/pdf.jpg');
+    background-repeat: no-repeat;
+    display: block;
+    height: 50px;
+}
+
+.doc
+{
+    background-image: url('../admin/images/doc.jpg');
+    background-repeat: no-repeat;
+    display: block;
+    height: 50px;
+}
+.docx
+{
+    background-image: url('../admin/images/doc.jpg');
+    background-repeat: no-repeat;
+    display: block;
+    height: 50px;
+}
+.xls
+{
+    background-image: url('../admin/images/excel.png');
+    background-repeat: no-repeat;
+    display: block;
+    height: 50px;
+}
+.txt
+{
+    background-image: url('../admin/images/txt.gif');
+    background-repeat: no-repeat;
+    display: block;
+    height: 50px;
+}
+.rar
+{
+    background-image: url('../admin/images/RAR.jpg');
+    background-repeat: no-repeat;
+    display: block;
+    height: 50px;
+}
+.exe
+{
+    background-image: url('../admin/images/EXE.jpg');
+    background-repeat: no-repeat;
+    display: block;
+    height: 50px;
+}
+.pdfgrid
+{
+    font-family: 'Times New Roman' , Times, serif;
+    font-size: 12px;
+}

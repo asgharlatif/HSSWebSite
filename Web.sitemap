@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="Default.aspx" title="Home"  description="">
+
+
+   
+    <siteMapNode url="sitemap.aspx" title="Site Map"  description="" />
+    <siteMapNode url="faqsection.aspx" title="FAQ"  description="" />
+    <siteMapNode url="termscondition.aspx" title="Term of Use"  description="" />
+    <siteMapNode url="privacy.aspx" title="Privacy Policy"  description="" />
+    <siteMapNode url="News-Category.aspx?NewsCategoryId=5" title="News and Events"  description="" />
+    
+    
+
+    <siteMapNode url="productviewgallery.aspx" title="Products"  description="">
+      <siteMapNode url="productviewgallery.aspx?dispid=idPrdDipCategoryWise&amp;pv=productviewgallery" title="Gallery View"  description="" />
+      <siteMapNode url="cart.aspx" title="Shopping Cart"  description="" />
+      <siteMapNode url="productinquiry.aspx" title="Product Inquiry"  description="" />
+      
+    </siteMapNode>
+
+    <siteMapNode url="productinlinedisplay.aspx" title="Products"  description="">
+      <siteMapNode url="productinlinedisplay.aspx?dispid=idPrdDipCategoryWise&amp;catQty=" title="List View"  description="" />
+      
+    </siteMapNode>
+
+    <siteMapNode url="aboutus.aspx" title="About us"  description="">
+        <siteMapNode url="ceomessage.aspx" title="CEO Message"  description="" />
+        <siteMapNode url="missionstatement.aspx" title="Mission Statement"  description="" />
+        <siteMapNode url="Vision.aspx" title="Vision Statement"  description="" />
+        <siteMapNode url="contactus.aspx" title="Contact us"  description="" />
+        <siteMapNode url="partners.aspx" title="Partners"  description="" />
+    </siteMapNode>
+
+    
+
+    
+
+  </siteMapNode>
+</siteMap>

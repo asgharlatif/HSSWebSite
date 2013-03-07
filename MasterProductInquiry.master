@@ -1,0 +1,37 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Site.master" AutoEventWireup="true" CodeFile="MasterProductInquiry.master.cs" Inherits="MasterProductInquiry" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="MainContent" Runat="Server">
+    <link href="App_Themes/Admin/CheckoutProductStyleSheet.css" rel="stylesheet" type="text/css" />
+<div class="ProductInquiryBorderDiv">
+
+    <div class="ProductInquiryHeaderSection">
+        <h1>Thanks for your attention to HS&S Company !</h1> <h3>Click for contacts and quotation </h3>
+        <h2>
+            <div id="AddToQuotation">
+                <asp:Button ID="btnAdd" runat="server" Text="Add to basket" 
+                    CssClass="FormButtons" onclick="btnAdd_Click" />
+                <asp:Button ID="Button1" runat="server" Text="Checkout" CssClass="FormButtons" OnClick="GoToCart" />
+            </div>
+           
+        </h2>
+    </div>
+    <asp:ContentPlaceHolder ID="MainProductDisplaySection" runat="server"/>
+    <div class="ProductInquiryHeaderSection">
+       <h1> We also recommend some related products for you. Send your inquiry NOW!</h1>  <h3> *Uncheck if you do not want to take these recommendation.</h3>
+    </div>
+    <asp:ContentPlaceHolder ID="SimilarProductDisplaySection" runat="server"/>
+  
+    <div class="ProductInquiryFooterSection">
+    
+         <h2><a href="SendQuotation.aspx"> 
+             </a></h2><h1> Click Over Product Image for contacts and quotation</h1>
+    </div>
+
+    
+
+             
+</div>
+
+
+</asp:Content>
+

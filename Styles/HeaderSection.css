@@ -1,0 +1,46 @@
+﻿.HeaderSearchSection
+{
+	border-style: solid;
+	border-width: 0px;
+	padding: 0px 0px 0px 0px;
+	width: 200px;
+	height: 40px;
+	float: right;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	text-align: right;
+}
+.HeaderSearchSection #HeaderSearchSectionBasket
+{
+	background-position: right top;
+	width: 200px;
+	height: 38px;
+	padding: 0px;
+	margin-bottom: 2px;
+	background-repeat: no-repeat;
+}
+.HeaderSearchSection #InnerHeaderSearchSection
+{
+	margin: 0px 0px 0px 0px;
+	padding: 0px;
+	border-style: solid;
+	border-width: thin;
+	width: 200px;
+	height: 27px;
+	left: 0px;
+}
+
+.HeaderSearchSection #DivShowLoginId
+{
+	border-style: none;
+	border-width: thin;
+	width: 200px;
+	height: 17px;
+	font-size: 10px;
+}
+
+.HeaderSearchSection #SearchTextBox
+{
+	float: left;
+	
+}
